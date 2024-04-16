@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638486363540000000
+      ticks: 638489057880000000
     m_Hash: 582842879
   m_LockFileStatus:
     m_FilePath: /Users/ksenichault/Desktop/CS179N/Moonlight_Manor/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638486363540000000
+      ticks: 638489057880000000
     m_Hash: 146018820
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -735,9 +735,11 @@ m_ResolvedPackages:
     - 1.9.0
     - 1.9.1
     - 1.9.2
+    - 1.9.4
     compatible:
     - 1.9.2
-    recommended: 1.9.2
+    - 1.9.4
+    recommended: 1.9.4
     deprecated:
     - 1.8.0-pre.1
   dependencies:
