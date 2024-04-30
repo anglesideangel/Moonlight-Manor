@@ -351,11 +351,18 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.22f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Scripts/DoorClosed.cs"
+"Assets/Scripts/DoorClosedController.cs"
 "Assets/Scripts/DoorController.cs"
 "Assets/Scripts/FPSController.cs"
+"Assets/Scripts/LockController.cs"
+"Assets/Scripts/LockTrigger.cs"
 "Assets/Scripts/mouseController.cs"
-"Assets/Scripts/NewBehaviourScript.cs"
+"Assets/Scripts/Rotate.cs"
 "Assets/Scripts/Test.cs"
+"Assets/Scripts/Tile.cs"
+"Assets/Scripts/TileController.cs"
+"Assets/Scripts/TileManager.cs"
 -langversion:9.0
 
 /deterministic

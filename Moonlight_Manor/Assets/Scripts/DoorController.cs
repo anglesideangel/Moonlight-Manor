@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
 {
-    public GameObject obj;
+    //public GameObject obj;
     public TMP_Text text;
     public bool triggerAction = false;
     public bool opened= false;
+    public GameObject currentDoor;
     void Start()
     {
         text.gameObject.SetActive(false);
@@ -18,18 +19,23 @@ public class DoorController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("Door")){
-        text.gameObject.SetActive(true);
-        triggerAction = true;
+            text.gameObject.SetActive(true);
+            triggerAction = true;
+            currentDoor = collision.transform.parent.gameObject;;
         }
         
     }
 
     private void OnTriggerExit(Collider collision){
-        if (opened){
-            triggerAction = false;
-            text.gameObject.SetActive(false);
-            //obj.GetComponent<Animator>().Play("DoorClose");
-        
+        if (collision.CompareTag("Door"))
+        {
+            if (opened && collision.gameObject == currentDoor)
+            {
+                triggerAction = false;
+                text.gameObject.SetActive(false);
+                //obj.GetComponent<Animator>().Play("DoorClose");
+                opened = false;
+            }
         }
         
     }
@@ -39,12 +45,12 @@ public class DoorController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
-            if (triggerAction){
+            if (triggerAction && currentDoor != null){
                 if (!opened ){
-                    obj.GetComponent<Animator>().Play("DoorOpen");
+                    currentDoor.GetComponent<Animator>().Play("DoorOpen");
                     opened = true;
                 } else {
-                    obj.GetComponent<Animator>().Play("DoorClose");
+                    currentDoor.GetComponent<Animator>().Play("DoorClose");
                     opened = false;
                 }
                 

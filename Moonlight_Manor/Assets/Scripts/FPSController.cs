@@ -13,8 +13,11 @@ public class FPSController : MonoBehaviour
 
 
     Vector3 moveVelocity;
+    
     void Start()
     {
+        //LoadPlayerPosition();
+       
     }
 
     // Update is called once per frame
@@ -22,6 +25,7 @@ public class FPSController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
+    
         if (characterController.isGrounded) {
             moveVelocity = transform.right * 4 * x + transform.forward * 4 * z;
             moveVelocity.y = -0.2f;
@@ -36,6 +40,20 @@ public class FPSController : MonoBehaviour
         }
         
         characterController.Move(moveVelocity * Time.deltaTime);
+    }
+
+    void LoadPlayerPosition()
+    {
+        // checks if the key exists in PlayerPrefs 
+        // so if PlayerX, PlayerY and PlayerZ exist, then
+        // Check if the player's position has been initialized
+
+        if (PlayerPrefs.HasKey("X") && PlayerPrefs.HasKey("Y") && PlayerPrefs.HasKey("Z"))
+            {
+                // Load the previous player position
+                Vector3 playerPosition = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
+                transform.position = playerPosition;
+            }
     }
 }
 
