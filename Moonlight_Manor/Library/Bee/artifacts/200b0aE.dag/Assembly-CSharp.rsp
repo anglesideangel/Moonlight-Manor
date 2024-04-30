@@ -357,6 +357,7 @@
 "Assets/Scripts/FPSController.cs"
 "Assets/Scripts/LockController.cs"
 "Assets/Scripts/LockTrigger.cs"
+"Assets/Scripts/MainMenu.cs"
 "Assets/Scripts/mouseController.cs"
 "Assets/Scripts/Rotate.cs"
 "Assets/Scripts/Test.cs"
