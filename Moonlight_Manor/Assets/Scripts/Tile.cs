@@ -5,9 +5,9 @@ using UnityEngine;
 public class Tile : MonoBehaviour
 {
     
-    public bool isCorrectTile = false;
-    public bool isStartingTile = false;
-    public int order = 0;
+    public bool isCorrectTile;
+    public bool isStartingTile;
+    public int order;
    
    // Start is called before the first frame update
     void Start()
