@@ -1033,3 +1033,1033 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1791.678638 seconds.
+  path: Assets/MainMenu.jpg
+  artifactKey: Guid(a8a34f242f1d34263aa7dd2255fd0b15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/MainMenu.jpg using Guid(a8a34f242f1d34263aa7dd2255fd0b15) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '2e34d3d38f7dc714d5dd897500973de8') in 0.154657 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000107 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+  artifactKey: Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt using Guid(d82c1b31c7e74239bff1220585707d2b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'af4cb1dfad9e79c2a5635400a9deb8b1') in 0.004781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.json
+  artifactKey: Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.json using Guid(8f05276190cf498a8153f6cbe761d4e6) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'e4bf2578faa6c6a41cf92e0ceaffb5d8') in 0.002871 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro.cginc
+  artifactKey: Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro.cginc using Guid(407bc68d299748449bbf7f48ee690f8d) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0a9e810e45b54b5cae87034f5fc51c04') in 0.001751 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Textures/dirty_carpet_nor_gl_1k.exr
+  artifactKey: Guid(869013cce94b843d5a3a22be59cb66bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/dirty_carpet_nor_gl_1k.exr using Guid(869013cce94b843d5a3a22be59cb66bc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6f9e7220e9794ea93f00f2e068b48d7b') in 0.008617 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Assets/DoorObject.prefab
+  artifactKey: Guid(385f5334488cf4f7093f9a7c125dff4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/DoorObject.prefab using Guid(385f5334488cf4f7093f9a7c125dff4a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6136ef5c11be44a578e1d3b4d020406b') in 0.053322 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 35
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Material/metal.mat
+  artifactKey: Guid(922088bcd3c6342cfbee05999b59493e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Material/metal.mat using Guid(922088bcd3c6342cfbee05999b59493e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '4ab34e9b4e02866219b0b74d0b462502') in 0.013672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000125 seconds.
+  path: Assets/Textures/rosewood_veneer1_nor_gl_1k.exr
+  artifactKey: Guid(65a95f647797e4845a3ce21579868396) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rosewood_veneer1_nor_gl_1k.exr using Guid(65a95f647797e4845a3ce21579868396) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3783b1eef594233da3c20ef168e2ee9e') in 0.008505 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Assets/DoorClosed.prefab
+  artifactKey: Guid(f2febdc9b1bdc42f5a10ff8bb0d8cd85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/DoorClosed.prefab using Guid(f2febdc9b1bdc42f5a10ff8bb0d8cd85) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1153f60e9ae092d8424cc50bc7614d0f') in 0.031243 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Assets/shelves.fbx
+  artifactKey: Guid(2546af3ff141746a687b84ade5594288) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/shelves.fbx using Guid(2546af3ff141746a687b84ade5594288) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a6e5ccf20a34cc22c815a33c1243ecb1') in 0.029303 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 38
+========================================================================
+Received Import Request.
+  Time since last request: 0.000097 seconds.
+  path: Assets/Assets/door.prefab
+  artifactKey: Guid(98284bc9a367d44caab4e71636920fb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/door.prefab using Guid(98284bc9a367d44caab4e71636920fb5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '241c4522be59580aec210732ce2b1040') in 0.011051 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 0.000096 seconds.
+  path: Assets/Animations/DoorClose.anim
+  artifactKey: Guid(c674ef030f8cd4ecb95a46647f12cb2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/DoorClose.anim using Guid(c674ef030f8cd4ecb95a46647f12cb2c) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '116cf23dc63608625ecdd58f9e96893f') in 0.006687 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000159 seconds.
+  path: Assets/Material/wood2.mat
+  artifactKey: Guid(99e7ee79bca5d47e1a2936a7577c54e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Material/wood2.mat using Guid(99e7ee79bca5d47e1a2936a7577c54e7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5c184ed5b6f3dd6dbc943fae9f7a8718') in 0.003781 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/Textures/rosewood_veneer1_diff_1k.jpg
+  artifactKey: Guid(0afaccb3e936e4e3ea5e0537605ba616) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rosewood_veneer1_diff_1k.jpg using Guid(0afaccb3e936e4e3ea5e0537605ba616) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'fff282fee3e40a2daddacdddf567e750') in 0.007186 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/Scripts/Tile.cs
+  artifactKey: Guid(5a45cb4bddb6045fbbaaa191147d198a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Tile.cs using Guid(5a45cb4bddb6045fbbaaa191147d198a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '616fd5c661fe9285a738f3356ba2123a') in 0.002793 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000128 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+  artifactKey: Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt using Guid(381dcb09d5029d14897e55f98031fca5) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a88dd1ba2d4023d054bfb23a6a2e7921') in 0.001918 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Textures/rosewood_veneer1_ao_1k.jpg
+  artifactKey: Guid(807d039afd0f741f5ab402d2277ac475) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/rosewood_veneer1_ao_1k.jpg using Guid(807d039afd0f741f5ab402d2277ac475) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6667b4b0687487209933eba84709e144') in 0.008803 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/Textures/lock_img.png
+  artifactKey: Guid(ef2c9af883b894f349cabe04175f8ab0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/lock_img.png using Guid(ef2c9af883b894f349cabe04175f8ab0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bef1e62af7d56143cbcac0765bf28bab') in 0.009958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000138 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+  artifactKey: Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc using Guid(d930090c0cd643c7b55f19a38538c162) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b7b4302337f8f0449c18b4d18b70f641') in 0.002788 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000119 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+  artifactKey: Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader using Guid(128e987d567d4e2c824d754223b3f3b0) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '708089676e930981bbc7c2e6745ffc36') in 0.005766 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/Textures/dirty_carpet_rough_1k.exr
+  artifactKey: Guid(71a8e387349f64df4b388b89bbe8b8ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/dirty_carpet_rough_1k.exr using Guid(71a8e387349f64df4b388b89bbe8b8ac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a4231c809dc211b2d3a891293b33d2a8') in 0.008625 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000126 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+  artifactKey: Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader using Guid(fe393ace9b354375a9cb14cdbbc28be4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5153fa14f99930f226a9c6e1dceb12ef') in 0.003257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Assets/Lock_asset.prefab
+  artifactKey: Guid(1a4d773823ae8430e870d11ae16ba041) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/Lock_asset.prefab using Guid(1a4d773823ae8430e870d11ae16ba041) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'ffd356ce20ce62aba718a61f5d48981c') in 0.004391 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 56
+========================================================================
+Received Import Request.
+  Time since last request: 0.000063 seconds.
+  path: Assets/Scenes/Main.unity
+  artifactKey: Guid(baa9aa76418bc42f28afeddeeb669edc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/Main.unity using Guid(baa9aa76418bc42f28afeddeeb669edc) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'c2c521f163259135e93dad3716769396') in 0.001716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000608 seconds.
+  path: Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+  artifactKey: Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt using Guid(fade42e8bc714b018fac513c043d323b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'b61f7380c0d657f0dd19de50ffc3732f') in 0.002560 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '53e2d4ddb037b11b47b44515ac52a59f') in 0.003201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000115 seconds.
+  path: Assets/Scripts/Rotate.cs
+  artifactKey: Guid(2a80b40a7437c45ea93610a21eacde31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Rotate.cs using Guid(2a80b40a7437c45ea93610a21eacde31) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6bfba9e6ba1ecb7363f33175543a21e3') in 0.002676 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000075 seconds.
+  path: Assets/Assets/character_before_animation.fbx
+  artifactKey: Guid(2fd0ad7c19f09484c902fcc65c81a6c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/character_before_animation.fbx using Guid(2fd0ad7c19f09484c902fcc65c81a6c4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '97f12ef96097d9928d42b72f2584bf98') in 0.027049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 91
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Scenes/TitleScreen.unity
+  artifactKey: Guid(b123168e0abd843ddbca77e8b7f84f46) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scenes/TitleScreen.unity using Guid(b123168e0abd843ddbca77e8b7f84f46) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'efa81030c0ddad5e223621eeec71b304') in 0.002086 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/Animations/DoorOpen.anim
+  artifactKey: Guid(797c85c917c164af3be6a1fd33534561) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/DoorOpen.anim using Guid(797c85c917c164af3be6a1fd33534561) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8d3e4948ed1922b729a3b7e483a3240e') in 0.003825 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000078 seconds.
+  path: Assets/lock.fbx
+  artifactKey: Guid(370ce9e2ad4dc442d838408e9ae93407) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/lock.fbx using Guid(370ce9e2ad4dc442d838408e9ae93407) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6f02cd2d38c80751f7817fff0f995d1d') in 0.009815 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 17
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '27484a6da8fc24c28ef7527ddfcecda5') in 0.003824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000121 seconds.
+  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '1d04a0414d254a277b8de6f585884968') in 0.029047 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Animations/walking.anim
+  artifactKey: Guid(b5c5bf9e5ad354e1b806471a8e361ae4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Animations/walking.anim using Guid(b5c5bf9e5ad354e1b806471a8e361ae4) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '34f35a1b8c465a596a44f00084fab96b') in 0.004398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000067 seconds.
+  path: Assets/Scripts/MainMenu.cs
+  artifactKey: Guid(475dd8ef4a8124cc48d707e8db9c6298) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/MainMenu.cs using Guid(475dd8ef4a8124cc48d707e8db9c6298) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '6106801bd89d315d44f69d9a2f5cf2a3') in 0.002299 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/Scripts/LockTrigger.cs
+  artifactKey: Guid(ecc5c49ac04f44cfaa3993ecae97939e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/LockTrigger.cs using Guid(ecc5c49ac04f44cfaa3993ecae97939e) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a35eccf0152013a4408d0d394fc9f8fc') in 0.002457 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000130 seconds.
+  path: Assets/Materials/wood_planks_rough_1k.mat
+  artifactKey: Guid(9375b47516ca4498383e07e85140aeac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Materials/wood_planks_rough_1k.mat using Guid(9375b47516ca4498383e07e85140aeac) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '3ecceed2415905e32818bf366dc035a4') in 0.004027 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Assets/lock2.fbx
+  artifactKey: Guid(52fdd06b1de4945729d0343a5387dd11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/lock2.fbx using Guid(52fdd06b1de4945729d0343a5387dd11) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'd60b9c962347b02c7a7b40990e209816') in 0.010518 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/Scripts/Test.cs
+  artifactKey: Guid(219353c0e472647b4a99cccdb74aafa2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/Test.cs using Guid(219353c0e472647b4a99cccdb74aafa2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '8d776187d5c7ab30a166e98a4ade7e82') in 0.002326 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Textures/puzzle1_clue.jpg
+  artifactKey: Guid(54049dd063ae84b67aea07b579da058a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/puzzle1_clue.jpg using Guid(54049dd063ae84b67aea07b579da058a) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'a26a48fd0f18ac282c9671b34eb0944c') in 0.009794 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/Scripts/FPSController.cs
+  artifactKey: Guid(5fddecc45391e4a23967358d90cf16a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/FPSController.cs using Guid(5fddecc45391e4a23967358d90cf16a2) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '5fcae59df4e10f9dea1691058a714eb5') in 0.002674 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Scripts/LockController.cs
+  artifactKey: Guid(fa6a06007ba454d75a6e2cc8e741deb7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Scripts/LockController.cs using Guid(fa6a06007ba454d75a6e2cc8e741deb7) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: 'bd9e7c637370b2ad30402c3af4134348') in 0.003113 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Textures/dirty_carpet_disp_1k.png
+  artifactKey: Guid(6de09f47439ca49ca8ee4a8c30702d84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Textures/dirty_carpet_disp_1k.png using Guid(6de09f47439ca49ca8ee4a8c30702d84) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '033b0a71b657d9f93512ff596cb5cfb2') in 0.008008 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000060 seconds.
+  path: Assets/Assets/kitchen.fbx
+  artifactKey: Guid(e549d1354debf4e25b360eba56886420) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)
+Start importing Assets/Assets/kitchen.fbx using Guid(e549d1354debf4e25b360eba56886420) Importer(2089858483,0ecaa5967403d082aa24f35e1b516d23)  -> (artifact id: '0190d239aae907fef5c9a1aeae4b8050') in 0.285057 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 711
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16d46f000 may have been prematurely finalized
+Symbol file data-0x151118000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cbefa00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138390000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28f37fa00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28f391400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151130000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140088000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c7e1200 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140088000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151150000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cbefa00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cbfa400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28f37fa00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151208000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140260000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151168000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1305f8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130348000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14b7db000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14b7e1e00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151358000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151378000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x151358000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.328 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.750 seconds
+Domain Reload Profiling: 1079ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (39ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (182ms)
+		LoadAssemblies (194ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (22ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (750ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (260ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (40ms)
+			ProcessInitializeOnLoadAttributes (197ms)
+			ProcessInitializeOnLoadMethodAttributes (13ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3098 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.1 KB). Loaded Objects now: 3608.
+Memory consumption went from 188.4 MB to 188.3 MB.
+Total: 2.659000 ms (FindLiveObjects: 0.146125 ms CreateObjectMapping: 0.041541 ms MarkObjects: 2.414584 ms  DeleteObjects: 0.055458 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16d46f000 may have been prematurely finalized
+Symbol file data-0x150008000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28fef4600 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138780000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28fef9800 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28fefda00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150090000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150008000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28ff04400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1387c8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1501f0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14b2e1600 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14b2e8c00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14b2e6600 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1387d8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150240000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150288000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150018000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140d78000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28f5b0a00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x28f68f800 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150268000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1503c0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x150268000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.364 seconds
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.754 seconds
+Domain Reload Profiling: 1119ms
+	BeginReloadAssembly (99ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (217ms)
+		LoadAssemblies (211ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (38ms)
+			TypeCache.Refresh (34ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (755ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (255ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (195ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 1.17 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3611.
+Memory consumption went from 195.5 MB to 195.4 MB.
+Total: 3.305458 ms (FindLiveObjects: 0.124583 ms CreateObjectMapping: 0.041541 ms MarkObjects: 3.082542 ms  DeleteObjects: 0.056083 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16d46f000 may have been prematurely finalized
+Symbol file data-0x130028000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a5e4400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140060000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c919c00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c923000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140008000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1303d8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c928400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140060000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x139458000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c923000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c92a600 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c418000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x139510000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140250000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140070000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x139470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1500f0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a514e00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c923000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1303c8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1395d8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x139488000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.326 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.457 seconds
+Domain Reload Profiling: 783ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (33ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (22ms)
+	LoadAllAssembliesAndSetupDomain (174ms)
+		LoadAssemblies (185ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (21ms)
+			TypeCache.Refresh (17ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (457ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (250ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (193ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3614.
+Memory consumption went from 202.3 MB to 202.3 MB.
+Total: 2.752167 ms (FindLiveObjects: 0.123792 ms CreateObjectMapping: 0.039916 ms MarkObjects: 2.534792 ms  DeleteObjects: 0.053208 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16d46f000 may have been prematurely finalized
+Symbol file data-0x1306d8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a167400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1306f0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a167400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a170800 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130b10000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130700000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a177200 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130700000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131258000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a177200 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a17e800 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a17ca00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131348000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131258000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131348000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131360000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131570000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a184800 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a18be00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131278000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131570000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x131278000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.356 seconds
+Refreshing native plugins compatible for Editor in 0.93 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.739 seconds
+Domain Reload Profiling: 1095ms
+	BeginReloadAssembly (98ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (211ms)
+		LoadAssemblies (186ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (59ms)
+			TypeCache.Refresh (46ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (12ms)
+	FinalizeReload (739ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (248ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (5ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (38ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.97 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.3 KB). Loaded Objects now: 3617.
+Memory consumption went from 209.1 MB to 209.1 MB.
+Total: 2.581916 ms (FindLiveObjects: 0.160542 ms CreateObjectMapping: 0.038792 ms MarkObjects: 2.330875 ms  DeleteObjects: 0.050875 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16d46f000 may have been prematurely finalized
+Symbol file data-0x1315a0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c114400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130390000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c0a8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c11d000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130400000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130420000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c778c00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130420000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130628000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14c778c00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cc6b000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cc70000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138540000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138488000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1386e0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cc72e00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cc81200 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138560000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1386e0000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138560000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.248 seconds
+Refreshing native plugins compatible for Editor in 0.91 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.487 seconds
+Domain Reload Profiling: 736ms
+	BeginReloadAssembly (85ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (16ms)
+	LoadAllAssembliesAndSetupDomain (113ms)
+		LoadAssemblies (132ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12ms)
+			TypeCache.Refresh (7ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (488ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (244ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (35ms)
+			ProcessInitializeOnLoadAttributes (188ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.96 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.3 KB). Loaded Objects now: 3620.
+Memory consumption went from 215.9 MB to 215.9 MB.
+Total: 2.890041 ms (FindLiveObjects: 0.175666 ms CreateObjectMapping: 0.038792 ms MarkObjects: 2.618667 ms  DeleteObjects: 0.055791 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Thread 0x16d46f000 may have been prematurely finalized
+Symbol file data-0x140008000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12a043c00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Mono.Reflection.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x2a8048000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEngine.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14bda1e00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.EditorCoroutines.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14bdad200 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.SettingsProvider.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1388e8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Performance.Profile-Analyzer.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x140020000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12a05aa00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138908000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Timeline.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14a5a5200 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.Settings.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cb92400 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Shared.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14bda1e00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x1512b8000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138908000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130018000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.UI.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x138470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Core.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x12a062800 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.State.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x14cb87a00 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VSCode.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130668000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/UnityEditor.TestRunner.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130470000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+Symbol file data-0x130668000 doesn't match image /Users/angelibanez/Documents/GitHub/Moonlight-Manor/Moonlight_Manor/Library/ScriptAssemblies/Unity.VisualScripting.Flow.Editor.dll
+Symbol file LoadedFromMemory is not a mono symbol file
+- Loaded All Assemblies, in  0.337 seconds
+Refreshing native plugins compatible for Editor in 1.28 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.794 seconds
+Domain Reload Profiling: 1131ms
+	BeginReloadAssembly (97ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (37ms)
+	RebuildCommonClasses (23ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (15ms)
+	LoadAllAssembliesAndSetupDomain (193ms)
+		LoadAssemblies (196ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (26ms)
+			TypeCache.Refresh (20ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (794ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (268ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (210ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (1ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (3ms)
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3099 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 23 unused Assets / (31.2 KB). Loaded Objects now: 3623.
+Memory consumption went from 222.8 MB to 222.7 MB.
+Total: 2.924750 ms (FindLiveObjects: 0.128333 ms CreateObjectMapping: 0.039583 ms MarkObjects: 2.706833 ms  DeleteObjects: 0.049375 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
