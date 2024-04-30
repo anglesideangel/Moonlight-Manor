@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MoonlightManor.unity
+    guid: 56fac2bfa10eb4166a8f454ec64a2843
+  - enabled: 1
+    path: Assets/Scenes/SampleScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/The manor.unity
+    guid: fdd90615f85b24a99a4d843c0d6f81dd
   m_configObjects: {}
