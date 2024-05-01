@@ -25,10 +25,6 @@ public class FPSController : MonoBehaviour
     {
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     
         if (characterController.isGrounded) {
         if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
