@@ -5,23 +5,11 @@ using UnityEngine;
 using TMPro;
 public class TileManager : MonoBehaviour
 {
-    public static TileManager Instance;
     public TMP_Text text;
 
     private List<Tile> correctTiles = new List<Tile>();
     private List<Tile> correctTilesFound = new List<Tile>();
     public bool foundStartingTile= false;
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else
-        {
-            Destroy(gameObject); 
-        }
-    }
 
     // Start is called before the first frame update
     void Start()

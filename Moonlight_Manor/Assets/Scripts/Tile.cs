@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
+<<<<<<< Updated upstream
     
     public bool isCorrectTile;
     public bool isStartingTile;
     public int order;
+=======
+    public TileManager manager;
+    public bool isCorrectTile = false;
+    public bool isStartingTile = false;
+    public int order = 0;
+>>>>>>> Stashed changes
    
    // Start is called before the first frame update
     void Start()
     {
         if (isCorrectTile)
         {
-            TileManager.Instance.AddCorrectTile(this);
+            manager.AddCorrectTile(this);
         }
     }
 
@@ -29,23 +36,23 @@ public class Tile : MonoBehaviour
         if (other.CompareTag("Player")) 
         {
             if (isStartingTile){
-                TileManager.Instance.foundStartingTile =  true;
+                manager.foundStartingTile =  true;
                 GetComponent<Renderer>().material.color = Color.green;
-                TileManager.Instance.AddCorrectTileFound(this);
+                manager.AddCorrectTileFound(this);
                 
             }
-            if (isCorrectTile && TileManager.Instance.foundStartingTile)
+            if (isCorrectTile && manager.foundStartingTile)
             {
-                if (TileManager.Instance.IsNextTileInPath(this))
+                if (manager.IsNextTileInPath(this))
                 {
                     GetComponent<Renderer>().material.color = Color.green;
-                    TileManager.Instance.AddCorrectTileFound(this);
+                    manager.AddCorrectTileFound(this);
                 }
 
             }
             else
             {
-                TileManager.Instance.Reset();
+                manager.Reset();
             }
         }
         
