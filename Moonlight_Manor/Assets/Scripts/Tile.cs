@@ -4,17 +4,10 @@ using UnityEngine;
 
 public class Tile : MonoBehaviour
 {
-<<<<<<< Updated upstream
-    
-    public bool isCorrectTile;
-    public bool isStartingTile;
-    public int order;
-=======
     public TileManager manager;
     public bool isCorrectTile = false;
     public bool isStartingTile = false;
     public int order = 0;
->>>>>>> Stashed changes
    
    // Start is called before the first frame update
     void Start()
