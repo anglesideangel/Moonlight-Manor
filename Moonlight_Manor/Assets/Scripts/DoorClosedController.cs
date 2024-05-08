@@ -7,7 +7,8 @@ using UnityEngine.UI;
 public class DoorClosedController : MonoBehaviour
 {
     //public GameObject obj;
-    //public TMP_Text text;
+    public TMP_Text text;
+    public GameObject currentDoor;
     void Start()
     {
         //text.gameObject.SetActive(false);
@@ -16,12 +17,12 @@ public class DoorClosedController : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("DoorClosed")){
-            TMP_Text collidedText = collision.GetComponent<TMP_Text>();
-            Debug.Log(collidedText.text);
-            if (collidedText != null)
+            currentDoor = collision.transform.parent.gameObject;
+            text = currentDoor.GetComponentInChildren<TMP_Text>();
+        
+            if (text != null)
             {
-                Debug.Log("blee");
-                collidedText.gameObject.SetActive(true);
+                text.gameObject.SetActive(true);
             }
             
            }
@@ -31,11 +32,9 @@ public class DoorClosedController : MonoBehaviour
     private void OnTriggerExit(Collider collision){
         if (collision.CompareTag("DoorClosed"))
         {
-            TMP_Text collidedText = collision.GetComponentInChildren<TMP_Text>();
-
-            if (collidedText != null)
+            if (text != null)
             {
-                collidedText.gameObject.SetActive(false);
+                text.gameObject.SetActive(false);
             }
         }
         
