@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class FPSController : MonoBehaviour, IDataPersistence
+public class FPSController : NetworkBehaviour,IDataPersistence
 {
     // Start is called before the first frame update
     public CharacterController characterController;
