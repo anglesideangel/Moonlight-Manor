@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
-
+using Unity.Netcode;
 public class FPSController : NetworkBehaviour,IDataPersistence
 {
     // Start is called before the first frame update
@@ -12,7 +12,7 @@ public class FPSController : NetworkBehaviour,IDataPersistence
 
 
     Vector3 moveVelocity;
-    
+
     void Start()
     {
         //LoadPlayerPosition();
@@ -22,6 +22,9 @@ public class FPSController : NetworkBehaviour,IDataPersistence
     // Update is called once per frame
     void Update()
     {
+        //if(!IsOwner) return;
+       // if (IsLocalPlayer) {
+        Debug.Log(IsOwner);
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
     
@@ -39,8 +42,9 @@ public class FPSController : NetworkBehaviour,IDataPersistence
         }
         
         characterController.Move(moveVelocity * Time.deltaTime);
+       // }
     }
-
+    
     void LoadPlayerPosition()
     {
         // checks if the key exists in PlayerPrefs 
