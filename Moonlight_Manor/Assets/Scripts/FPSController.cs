@@ -4,7 +4,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 using Unity.Netcode;
 
-public class FPSController : NetworkBehaviour
+public class FPSController : NetworkBehaviour,IDataPersistence
 {
     // Start is called before the first frame update
     public CharacterController characterController;
