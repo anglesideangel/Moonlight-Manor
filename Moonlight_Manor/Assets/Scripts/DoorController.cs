@@ -6,40 +6,33 @@ using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
 {
-    //public GameObject obj;
     public TMP_Text text;
     public bool triggerAction = false;
     public bool opened= false;
     public GameObject currentDoor;
     void Start()
     {
-       // text.gameObject.SetActive(false);
+       text = gameObject.transform.parent.GetComponentInChildren<TMP_Text>();
+       text.gameObject.SetActive(false);
     }
 
 
     private void OnTriggerEnter(Collider collision){
-        if (collision.CompareTag("Door")){
+        if (collision.CompareTag("Player")){
             triggerAction = true;
-            currentDoor = collision.transform.parent.gameObject;
-            text = currentDoor.GetComponentInChildren<TMP_Text>();
-            Debug.Log(text);
             text.gameObject.SetActive(true);
         }
         
     }
 
     private void OnTriggerExit(Collider collision){
-        if (collision.CompareTag("Door"))
+        if (collision.CompareTag("Player"))
         {
-            if (collision.transform.parent.gameObject == currentDoor)
-            {
-                triggerAction = false;
-                //text.gameObject.SetActive(false);
-                //obj.GetComponent<Animator>().Play("DoorClose");
-                if (opened) opened = false;
-                currentDoor = null;
-                Debug.Log(currentDoor);
-            }
+            triggerAction = false;
+            text.gameObject.SetActive(false);
+            if (opened) opened = false;
+            currentDoor = null;
+        
         }
         
     }
@@ -49,12 +42,12 @@ public class DoorController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
-            if (triggerAction && currentDoor != null){
+            if (triggerAction && gameObject != null){
                 if (!opened ){
-                    currentDoor.GetComponent<Animator>().Play("DoorOpen");
+                    gameObject.GetComponentInParent<Animator>().Play("DoorOpen");
                     opened = true;
                 } else {
-                    currentDoor.GetComponent<Animator>().Play("DoorClose");
+                    gameObject.GetComponentInParent<Animator>().Play("DoorClose");
                     opened = false;
                 }
                 

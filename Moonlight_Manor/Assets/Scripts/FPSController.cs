@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
+using Unity.Netcode;
 
-public class FPSController : MonoBehaviour
+public class FPSController : NetworkBehaviour
 {
     // Start is called before the first frame update
     public CharacterController characterController;
@@ -12,7 +13,7 @@ public class FPSController : MonoBehaviour
 
 
     Vector3 moveVelocity;
-    
+
     void Start()
     {
         //LoadPlayerPosition();
@@ -22,6 +23,9 @@ public class FPSController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if(!IsOwner) return;
+       // if (IsLocalPlayer) {
+        Debug.Log(IsOwner);
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
     
@@ -39,6 +43,7 @@ public class FPSController : MonoBehaviour
         }
         
         characterController.Move(moveVelocity * Time.deltaTime);
+       // }
     }
 
     void LoadPlayerPosition()
@@ -54,5 +59,6 @@ public class FPSController : MonoBehaviour
                 transform.position = playerPosition;
             }
     }
+    
 }
 

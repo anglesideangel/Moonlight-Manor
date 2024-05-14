@@ -585,7 +585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 2874177927
+  GlobalObjectIdHash: 1150619407
   InScenePlacedSourceGlobalObjectIdHash: 3635913048
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -606,7 +606,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b766d42a3c1a047b36bbac6620d0fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerManager: {fileID: 0}
 --- !u!1 &4571498249267610745
 GameObject:
   m_ObjectHideFlags: 0
@@ -951,9 +950,6 @@ GameObject:
   - component: {fileID: 6848114180231721430}
   - component: {fileID: 5570231847422223211}
   - component: {fileID: 4767798927396396559}
-  - component: {fileID: 3826427506440224376}
-  - component: {fileID: 3379277342134221347}
-  - component: {fileID: 4831591841207443913}
   - component: {fileID: 4677393308342641906}
   m_Layer: 0
   m_Name: Capsule
@@ -1067,51 +1063,6 @@ CharacterController:
   m_SkinWidth: 0.0001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3826427506440224376
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6402529235406552609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb7f3e06054546f5b1733cd993677c6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  triggerAction: 0
-  opened: 0
-  currentDoor: {fileID: 0}
---- !u!114 &3379277342134221347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6402529235406552609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ecc5c49ac04f44cfaa3993ecae97939e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  triggerAction: 0
-  opened: 0
---- !u!114 &4831591841207443913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6402529235406552609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7511ff876d154318ac3ce214862a577, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  currentDoor: {fileID: 0}
 --- !u!136 &4677393308342641906
 CapsuleCollider:
   m_ObjectHideFlags: 0
