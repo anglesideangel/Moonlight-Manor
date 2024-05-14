@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class FPSController : MonoBehaviour
+public class FPSController : MonoBehaviour, IDataPersistence
 {
     // Start is called before the first frame update
     public CharacterController characterController;
@@ -53,6 +53,12 @@ public class FPSController : MonoBehaviour
                 Vector3 playerPosition = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
                 transform.position = playerPosition;
             }
+    }
+    public void LoadData(GameData data){
+        this.transform.position = data.playerPosition;
+    }
+    public void SaveData(ref GameData data){
+        data.playerPosition = this.transform.position;
     }
 }
 
