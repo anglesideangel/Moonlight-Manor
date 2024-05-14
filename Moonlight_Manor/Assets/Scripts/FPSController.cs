@@ -44,7 +44,7 @@ public class FPSController : NetworkBehaviour,IDataPersistence
         characterController.Move(moveVelocity * Time.deltaTime);
        // }
     }
-
+    
     void LoadPlayerPosition()
     {
         // checks if the key exists in PlayerPrefs 
