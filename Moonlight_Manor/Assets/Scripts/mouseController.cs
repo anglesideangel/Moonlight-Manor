@@ -6,21 +6,21 @@ public class mouseController : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float speed = 100;
+    //public float speed = 1.1f;
     public Transform playerBody;
 
     float xRotation = 0f;
 
     void Start()
     {
-        Cursor.lockState = CursorLockMode.Locked;
+        //Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
     void Update()
     {
-        float mouseX = Input.GetAxis("Mouse X") * speed * Time.deltaTime;
-        float mouseY = Input.GetAxis("Mouse Y") * speed * Time.deltaTime;
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
 
         xRotation -= mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);

@@ -13,15 +13,17 @@ public class DoorController : MonoBehaviour
     public GameObject currentDoor;
     void Start()
     {
-        text.gameObject.SetActive(false);
+       // text.gameObject.SetActive(false);
     }
 
 
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("Door")){
-            text.gameObject.SetActive(true);
             triggerAction = true;
-            currentDoor = collision.transform.parent.gameObject;;
+            currentDoor = collision.transform.parent.gameObject;
+            text = currentDoor.GetComponentInChildren<TMP_Text>();
+            Debug.Log(text);
+            text.gameObject.SetActive(true);
         }
         
     }
@@ -29,12 +31,14 @@ public class DoorController : MonoBehaviour
     private void OnTriggerExit(Collider collision){
         if (collision.CompareTag("Door"))
         {
-            if (opened && collision.gameObject == currentDoor)
+            if (collision.transform.parent.gameObject == currentDoor)
             {
                 triggerAction = false;
-                text.gameObject.SetActive(false);
+                //text.gameObject.SetActive(false);
                 //obj.GetComponent<Animator>().Play("DoorClose");
-                opened = false;
+                if (opened) opened = false;
+                currentDoor = null;
+                Debug.Log(currentDoor);
             }
         }
         
