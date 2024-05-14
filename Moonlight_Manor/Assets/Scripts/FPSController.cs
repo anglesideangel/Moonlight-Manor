@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 using Unity.Netcode;
-
 public class FPSController : NetworkBehaviour,IDataPersistence
 {
     // Start is called before the first frame update
@@ -59,6 +58,12 @@ public class FPSController : NetworkBehaviour,IDataPersistence
                 transform.position = playerPosition;
             }
     }
-    
+    public void LoadData(GameData data){
+        this.transform.position = data.playerPosition;
+    }
+    public void SaveData(ref GameData data){
+        data.playerPosition = this.transform.position;
+    }
 }
+
 
