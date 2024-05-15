@@ -45,7 +45,7 @@ public class TileManager : MonoBehaviour
     }
 
     
-    public void Reset(int index)
+    public void ResetTilePuzzle(int index)
     {
         foreach (Tile tile in correctTilesFound[index])
         {

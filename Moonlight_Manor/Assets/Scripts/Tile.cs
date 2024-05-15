@@ -59,7 +59,7 @@ public class Tile : MonoBehaviour
                     if (manager.foundStartTile[index]){
                         StartCoroutine(TeleportCharacter(other));
                     }
-                    manager.Reset(index);
+                    manager.ResetTilePuzzle(index);
                 }
             }
         }
