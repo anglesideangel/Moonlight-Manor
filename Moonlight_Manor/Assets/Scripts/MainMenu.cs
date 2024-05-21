@@ -6,6 +6,12 @@ using Unity.Netcode;
 
 public class MainMenu : MonoBehaviour
 {
+
+    private void Start()
+    {
+        DontDestroyOnLoad(NetworkManager.Singleton.gameObject);
+    }
+
     // Start is called before the first frame update
     public void HostGame()
     {
