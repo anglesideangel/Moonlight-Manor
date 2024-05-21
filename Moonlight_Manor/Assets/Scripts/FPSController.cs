@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
-using UnityEditor.Experimental.GraphView;
+using Unity.VisualScripting;
+
+//using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class FPSController : MonoBehaviour
@@ -11,18 +13,23 @@ public class FPSController : MonoBehaviour
 
     public float speed = 12f;
 
+    private string positionKey = "SavedPlayerPosition";
 
     Vector3 moveVelocity;
-    
+    private static FPSController instance;
+
+    [SerializeField]
+    private float forceMagnitude=1;    
     void Start()
     {
-        //LoadPlayerPosition();
+       // LoadPlayerPosition();
        
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
     
@@ -44,19 +51,50 @@ public class FPSController : MonoBehaviour
         
         characterController.Move(moveVelocity * Time.deltaTime);
     }
+    // public void SavePlayerPosition()
+    // {
+    //     PlayerPrefs.SetString(positionKey, transform.root.position.ToString());
+    // }
 
-    void LoadPlayerPosition()
-    {
-        // checks if the key exists in PlayerPrefs 
-        // so if PlayerX, PlayerY and PlayerZ exist, then
-        // Check if the player's position has been initialized
+    // private void LoadPlayerPosition()
+    // {
+        
+    //     string savedPositionString = PlayerPrefs.GetString(positionKey, string.Empty);
+    //     if (!string.IsNullOrEmpty(savedPositionString))
+    //     {
+    //         transform.root.position = StringToVector3(savedPositionString);
+    //     }
+    // }
+    
+    // private Vector3 StringToVector3(string sVector)
+    // {
+    //     if (sVector.StartsWith("(") && sVector.EndsWith(")"))
+    //     {
+    //         sVector = sVector.Substring(1, sVector.Length - 2);
+    //     }
 
-        if (PlayerPrefs.HasKey("X") && PlayerPrefs.HasKey("Y") && PlayerPrefs.HasKey("Z"))
-            {
-                // Load the previous player position
-                Vector3 playerPosition = new Vector3(PlayerPrefs.GetFloat("X"), PlayerPrefs.GetFloat("Y"), PlayerPrefs.GetFloat("Z"));
-                transform.position = playerPosition;
-            }
-    }
+    //     string[] sArray = sVector.Split(',');
+    //     return new Vector3(
+    //         float.Parse(sArray[0]),
+    //         float.Parse(sArray[1]),
+    //         float.Parse(sArray[2]));
+    // }
+    
+
+    // private void OnControllerColliderHit(ControllerColliderHit hit)
+    // {
+    //     var rigidBody = hit.collider.attachedRigidbody;
+
+    //     if (rigidBody != null)
+    //     {
+    //         var forceDirection = hit.gameObject.transform.position - transform.position;
+    //         forceDirection.y = 0;
+    //         forceDirection.Normalize();
+            
+    //         rigidBody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
+
+            
+    //     }
+    // }
 }
 

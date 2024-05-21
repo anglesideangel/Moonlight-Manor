@@ -9,7 +9,8 @@ public class DoorNewSceneController : MonoBehaviour
 {
     public bool triggerAction = false;
     public bool opened= false;
-    public GameObject currentDoor;
+    public GameObject objAnimator ;
+
     void Start()
     {
      
@@ -20,14 +21,13 @@ public class DoorNewSceneController : MonoBehaviour
             triggerAction = true;
             SceneManager.LoadScene("SecondScene");
         }
-        
     }
 
     public void OpenDoor()
     {
         if (!opened)
         {
-            gameObject.GetComponentInParent<Animator>().Play("DoorOpen");
+            objAnimator.GetComponent<Animator>().Play("DoorOpen");
             opened = true;
         }
     }

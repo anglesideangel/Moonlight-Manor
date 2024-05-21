@@ -12,38 +12,39 @@ public class LockController : MonoBehaviour
 
     private int[] result;
     private int[] correctResult;
-    public TMP_Text text;
+    public TMP_Text textCorrect;
+    public TMP_Text textFalse;
     void Start()
     {
         result = new int[] { 0, 0, 0};
-        correctResult = new int[] {2,2,2};
-        Rotate.Rotated += CheckResults;
-        text.gameObject.SetActive(false);
-        
+        correctResult = new int[] {5,8,7};
+        Rotate.Rotated += UpdateResults;
+        textCorrect.gameObject.SetActive(false);
+        textFalse.gameObject.SetActive(false);
+
     }
 
-    private void CheckResults(string wheelName, int number)
+    public void UpdateResults(string wheelName, int number)
     {
+        textFalse.gameObject.SetActive(false);
         if (wheelName == "wheel1") result[0] = number;
         else if (wheelName == "wheel2") result[1] = number;
         else if (wheelName == "wheel3") result[2] = number;
 
-        if ((result[0] == correctResult[0]) && (result[1] == correctResult[1]) && (result[2] == correctResult[2])) text.gameObject.SetActive(true);
+    }
+    
+    public void CheckResults()
+    {
+        if ((result[0] == correctResult[0]) && (result[1] == correctResult[1]) && (result[2] == correctResult[2])) {
+            textCorrect.gameObject.SetActive(true);
+        } else {
+            textFalse.gameObject.SetActive(true);
+        }
     }
 
     private void OnDestroy(){
-        Rotate.Rotated -= CheckResults;
+        Rotate.Rotated -= UpdateResults;
     }
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.C)){
-            SceneManager.LoadScene("Main");
-
-         //   PlayerPrefs.DeleteKey("X");
-         //   PlayerPrefs.DeleteKey("Y");
-         //   PlayerPrefs.DeleteKey("Z");
-        }
-    }
+   
     
 }

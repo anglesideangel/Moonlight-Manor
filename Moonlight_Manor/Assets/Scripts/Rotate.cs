@@ -19,7 +19,6 @@ public class Rotate : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Debug.Log("hhe");
         StartCoroutine("RotationWheel");
     }
 

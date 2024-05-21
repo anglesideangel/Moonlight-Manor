@@ -191,7 +191,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 1.72, y: -0.78, z: 1.32}
-  m_LocalScale: {x: 7.8936, y: 5.8828, z: 3.4201798}
+  m_LocalScale: {x: 3.6041389, y: 5.8828, z: 3.4201798}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1486806923925945224}
@@ -281,4 +281,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   triggerAction: 0
   opened: 0
-  currentDoor: {fileID: 0}

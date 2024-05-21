@@ -13,6 +13,9 @@ public class LockTrigger : MonoBehaviour
     public TMP_Text text;
     public bool triggerAction = false;
     public bool opened= false;
+
+    private FPSController playerController;
+
     
     
     void Start()
@@ -22,59 +25,74 @@ public class LockTrigger : MonoBehaviour
 
 
     private void OnTriggerEnter(Collider collision){
-        if (collision.CompareTag("Lock")){
-            
+       if (collision.CompareTag("Player"))
+        {
             text.gameObject.SetActive(true);
             triggerAction = true;
+            
+            //playerController = collision.GetComponent<FPSController>();
+
         }
         
     }
 
     private void OnTriggerExit(Collider collision){
-        if (collision.CompareTag("Lock"))
+        if (collision.CompareTag("Player"))
         {
-            if (opened)
-            {
-                triggerAction = false;
+            triggerAction = false;
                 text.gameObject.SetActive(false);
-                //obj.GetComponent<Animator>().Play("DoorClose");
-                opened = false;
-            }
         }
         
     }
 
 
     // Update is called once per frame
+    // void Update()
+    // {
+    //     if (Input.GetKeyDown(KeyCode.C)){
+    //         if (triggerAction){
+    //             if (playerController != null)
+    //             {
+    //                 playerController.SavePlayerPosition();
+    //             }
+    //             SceneManager.LoadScene("Lock");
+    //         } 
+    //     }
+    // }
+    private Vector3 characterPosition;
+
+    // Other existing code...
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C)){
-            if (triggerAction){
-               // SavePlayerPosition();
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (triggerAction)
+            {
+                // if (playerController != null)
+                // {
+                //     // Save character position
+                //     characterPosition = playerController.transform.position;
+                // }
                 SceneManager.LoadScene("Lock");
-                
-                if (!opened ){
+                if (!opened)
+                {
                     opened = true;
-                } else {
+                }
+                else
+                {
                     opened = false;
                 }
-                
-            } 
+            }
         }
     }
 
-    void SavePlayerPosition()
+    // Getter method for character position
+    public Vector3 GetCharacterPosition()
     {
-        PlayerPrefs.SetFloat("X", 2);// transform.position.x);
-        PlayerPrefs.SetFloat("Y",2);// transform.position.y);
-        PlayerPrefs.SetFloat("Z", 2);//transform.position.z);
-
-        Debug.Log(PlayerPrefs.GetFloat("PlayerX"));
-        Debug.Log(PlayerPrefs.GetFloat("PlayerY"));
-        Debug.Log(PlayerPrefs.GetFloat("PlayerZ"));
-       // PlayerPrefs.SetInt("PlayerPositionInitialized", 1);
-        
-        //PlayerPrefs.Save();
+        return characterPosition;
     }
 
+   
+   
 }
