@@ -6,18 +6,14 @@ using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
 
-
-public class LockTrigger : MonoBehaviour
+public class JigsawTrigger : MonoBehaviour
 {
-    //public GameObject obj;
     public TMP_Text text;
     public bool triggerAction = false;
     public bool opened= false;
 
     private FPSController playerController;
 
-    
-    
     void Start()
     {
         text.gameObject.SetActive(false);
@@ -46,26 +42,11 @@ public class LockTrigger : MonoBehaviour
     }
 
 
+
     // Update is called once per frame
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.C)){
-    //         if (triggerAction){
-    //             if (playerController != null)
-    //             {
-    //                 playerController.SavePlayerPosition();
-    //             }
-    //             SceneManager.LoadScene("Lock");
-    //         } 
-    //     }
-    // }
-    private Vector3 characterPosition;
-
-    // Other existing code...
-
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.J))
         {
             if (triggerAction)
             {
@@ -74,7 +55,7 @@ public class LockTrigger : MonoBehaviour
                 //     // Save character position
                 //     characterPosition = playerController.transform.position;
                 // }
-                SceneManager.LoadScene("Lock");
+                SceneManager.LoadScene("Jigsaw");
                 if (!opened)
                 {
                     opened = true;
@@ -86,13 +67,4 @@ public class LockTrigger : MonoBehaviour
             }
         }
     }
-
-    // Getter method for character position
-    /*public Vector3 GetCharacterPosition()
-    {
-        return characterPosition;
-    }
-*/
-   
-   
 }
