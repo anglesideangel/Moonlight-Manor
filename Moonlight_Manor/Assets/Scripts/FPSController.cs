@@ -20,8 +20,11 @@ public class FPSController : MonoBehaviour
 
     [SerializeField]
     private float forceMagnitude=1;    
+
+    
     void Start()
     {
+        DontDestroyOnLoad(transform.root.gameObject);
        // LoadPlayerPosition();
        
     }

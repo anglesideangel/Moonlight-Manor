@@ -74,6 +74,7 @@ public class LockTrigger : MonoBehaviour
                 //     // Save character position
                 //     characterPosition = playerController.transform.position;
                 // }
+                playerController.gameObject.GetComponent<Rigidbody> ().useGravity = false;
                 SceneManager.LoadScene("Lock");
                 if (!opened)
                 {

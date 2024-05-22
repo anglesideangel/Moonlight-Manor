@@ -16,13 +16,13 @@ public class MainMenu : MonoBehaviour
     public void HostGame()
     {
         NetworkManager.Singleton.StartHost();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Main");
     }
 
     public void JoinGame()
     {
         NetworkManager.Singleton.StartClient();
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Main");
     }
 
     public void QuitGame()
