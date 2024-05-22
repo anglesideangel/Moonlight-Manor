@@ -7,6 +7,8 @@ public class PlayerManager : MonoBehaviour
     public GameObject Player1 { get; private set; }
     public GameObject Player2 { get; private set; }
 
+    public GameObject ActivePlayer { get; set; }
+
     void Start()
     {
         if (Instance == null)

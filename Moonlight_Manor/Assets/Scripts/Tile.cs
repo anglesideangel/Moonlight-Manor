@@ -29,7 +29,7 @@ public class Tile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        int index = 0;
+        int index = -1;
         if (other.CompareTag("Player")){
             if (other.transform.parent == PlayerManager.Instance.Player1 ) index = 0;
             if (other.transform.parent == PlayerManager.Instance.Player2 ) index = 1;

@@ -54,50 +54,5 @@ public class FPSController : MonoBehaviour
         
         characterController.Move(moveVelocity * Time.deltaTime);
     }
-    // public void SavePlayerPosition()
-    // {
-    //     PlayerPrefs.SetString(positionKey, transform.root.position.ToString());
-    // }
-
-    // private void LoadPlayerPosition()
-    // {
-        
-    //     string savedPositionString = PlayerPrefs.GetString(positionKey, string.Empty);
-    //     if (!string.IsNullOrEmpty(savedPositionString))
-    //     {
-    //         transform.root.position = StringToVector3(savedPositionString);
-    //     }
-    // }
-    
-    // private Vector3 StringToVector3(string sVector)
-    // {
-    //     if (sVector.StartsWith("(") && sVector.EndsWith(")"))
-    //     {
-    //         sVector = sVector.Substring(1, sVector.Length - 2);
-    //     }
-
-    //     string[] sArray = sVector.Split(',');
-    //     return new Vector3(
-    //         float.Parse(sArray[0]),
-    //         float.Parse(sArray[1]),
-    //         float.Parse(sArray[2]));
-    // }
-    
-
-    // private void OnControllerColliderHit(ControllerColliderHit hit)
-    // {
-    //     var rigidBody = hit.collider.attachedRigidbody;
-
-    //     if (rigidBody != null)
-    //     {
-    //         var forceDirection = hit.gameObject.transform.position - transform.position;
-    //         forceDirection.y = 0;
-    //         forceDirection.Normalize();
-            
-    //         rigidBody.AddForceAtPosition(forceDirection * forceMagnitude, transform.position, ForceMode.Impulse);
-
-            
-    //     }
-    // }
 }
 

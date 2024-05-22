@@ -14,8 +14,6 @@ public class LockTrigger : MonoBehaviour
     public bool triggerAction = false;
     public bool opened= false;
 
-    private FPSController playerController;
-
     
     
     void Start()
@@ -23,17 +21,18 @@ public class LockTrigger : MonoBehaviour
         text.gameObject.SetActive(false);
     }
 
-
-    private void OnTriggerEnter(Collider collision){
-       if (collision.CompareTag("Player"))
+    private void OnTriggerEnter(Collider collision)
+    {
+        if (collision.CompareTag("Player"))
         {
             text.gameObject.SetActive(true);
             triggerAction = true;
-            
-            //playerController = collision.GetComponent<FPSController>();
-
+            if (collision.transform.parent != null)
+            {
+                PlayerManager.Instance.ActivePlayer = collision.transform.parent.gameObject; 
+                Debug.Log(PlayerManager.Instance.ActivePlayer);
+            }
         }
-        
     }
 
     private void OnTriggerExit(Collider collision){
@@ -46,35 +45,14 @@ public class LockTrigger : MonoBehaviour
     }
 
 
-    // Update is called once per frame
-    // void Update()
-    // {
-    //     if (Input.GetKeyDown(KeyCode.C)){
-    //         if (triggerAction){
-    //             if (playerController != null)
-    //             {
-    //                 playerController.SavePlayerPosition();
-    //             }
-    //             SceneManager.LoadScene("Lock");
-    //         } 
-    //     }
-    // }
-    private Vector3 characterPosition;
-
-    // Other existing code...
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.C))
         {
             if (triggerAction)
             {
-                // if (playerController != null)
-                // {
-                //     // Save character position
-                //     characterPosition = playerController.transform.position;
-                // }
-                playerController.gameObject.GetComponent<Rigidbody> ().useGravity = false;
+                PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = false;
+                PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = false;
                 SceneManager.LoadScene("Lock");
                 if (!opened)
                 {
@@ -87,13 +65,6 @@ public class LockTrigger : MonoBehaviour
             }
         }
     }
-
-    // Getter method for character position
-    /*public Vector3 GetCharacterPosition()
-    {
-        return characterPosition;
-    }
-*/
    
    
 }

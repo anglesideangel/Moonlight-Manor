@@ -14,6 +14,8 @@ public class LockController : MonoBehaviour
     private int[] correctResult;
     public TMP_Text textCorrect;
     public TMP_Text textFalse;
+
+   
     void Start()
     {
         result = new int[] { 0, 0, 0};
