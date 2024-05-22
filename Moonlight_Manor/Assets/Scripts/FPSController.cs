@@ -13,20 +13,12 @@ public class FPSController : MonoBehaviour
 
     public float speed = 12f;
 
-    private string positionKey = "SavedPlayerPosition";
-
     Vector3 moveVelocity;
-    private static FPSController instance;
-
-    [SerializeField]
-    private float forceMagnitude=1;    
 
     
     void Start()
     {
         DontDestroyOnLoad(transform.root.gameObject);
-       // LoadPlayerPosition();
-       
     }
 
     // Update is called once per frame

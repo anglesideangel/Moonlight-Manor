@@ -8,7 +8,7 @@ TagManager:
   - Lock
   - DoorClosed
   - Tile
-  - Puzzle
+  - WashingMachine
   layers:
   - Default
   - TransparentFX
