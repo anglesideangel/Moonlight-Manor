@@ -10,15 +10,22 @@ public class DoorController : MonoBehaviour
     public bool triggerAction = false;
     public bool opened= false;
     public GameObject currentDoor;
+    public bool isLocked = true;
+    
     void Start()
     {
        text = gameObject.transform.parent.GetComponentInChildren<TMP_Text>();
-       text.gameObject.SetActive(false);
+       if (gameObject.transform.parent.name == "DoorObject (8)"){
+        text.gameObject.SetActive(true);
+        isLocked = false;
+        }
+        else{text.gameObject.SetActive(false);}
+
     }
 
 
     private void OnTriggerEnter(Collider collision){
-        if (collision.CompareTag("Player")){
+        if (collision.CompareTag("Player") && !isLocked){
             triggerAction = true;
             text.gameObject.SetActive(true);
         }
@@ -42,7 +49,7 @@ public class DoorController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
-            if (triggerAction && gameObject != null){
+            if (triggerAction && gameObject != null ){
                 if (!opened ){
                     gameObject.GetComponentInParent<Animator>().Play("DoorOpen");
                     opened = true;
