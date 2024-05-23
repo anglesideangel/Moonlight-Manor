@@ -71,3 +71,6 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Moonlight_Manor/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json
+Moonlight_Manor/Assets/Scenes/Main.unity
+*.prefab
+*.json
