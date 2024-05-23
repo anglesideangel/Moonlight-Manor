@@ -10,16 +10,18 @@ public class DoorController : MonoBehaviour
     public bool triggerAction = false;
     public bool opened= false;
     public GameObject currentDoor;
-    public bool isLocked = true;
+    public bool isLocked;
     
     void Start()
     {
        text = gameObject.transform.parent.GetComponentInChildren<TMP_Text>();
-       if (gameObject.transform.parent.name == "DoorObject (8)"){
-        text.gameObject.SetActive(true);
-        isLocked = false;
-        }
-        else{text.gameObject.SetActive(false);}
+       text.gameObject.SetActive(false);
+       isLocked = false;
+    //    if (gameObject.transform.parent.name == "DoorObject (8)"){
+    //     text.gameObject.SetActive(true);
+    //     isLocked = false;
+    //     }
+    //     else{text.gameObject.SetActive(false);}
 
     }
 
