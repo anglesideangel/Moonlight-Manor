@@ -26,9 +26,9 @@ public class LockController : MonoBehaviour
         Rotate.Rotated += UpdateResults;
         textCorrect.gameObject.SetActive(false);
         textFalse.gameObject.SetActive(false);
-        // if (doorObject4 != null) {
-        //     doorObject4 = GameObject.Find("DoorObject (4)");
-        //     Debug.Log(doorObject4 != null);
+        // doorObject4 = GameObject.Find("DoorObject (4)");
+        // if (doorObject4 == null) {
+        //     Debug.Log("doorObject4 is null");
         // }
 
     }

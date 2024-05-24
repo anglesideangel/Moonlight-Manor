@@ -11,10 +11,19 @@ public class DoorLaundryController: MonoBehaviour
     public bool opened= false;
     public GameObject currentDoor;
     private bool canOpen = true;
+   // public bool isLocked;
+    
     void Start()
     {
        text = gameObject.transform.parent.GetComponentInChildren<TMP_Text>();
        text.gameObject.SetActive(false);
+       //isLocked = false;
+    //    if (gameObject.transform.parent.name == "DoorObject (8)"){
+    //     text.gameObject.SetActive(true);
+    //     isLocked = false;
+    //     }
+    //     else{text.gameObject.SetActive(false);}
+
     }
 
 
