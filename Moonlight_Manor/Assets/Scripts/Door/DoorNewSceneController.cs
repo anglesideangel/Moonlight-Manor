@@ -19,7 +19,7 @@ public class DoorNewSceneController : MonoBehaviour
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("Player")){
             triggerAction = true;
-            SceneManager.LoadScene("SecondScene");
+            //SceneManager.LoadScene("SecondScene");
         }
     }
 

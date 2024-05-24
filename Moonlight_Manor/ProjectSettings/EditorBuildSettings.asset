@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lock.unity
     guid: 8f2b6b1f48d744984abb74bc3babc4ab
+  - enabled: 1
+    path: Assets/Scenes/hintScene.unity
+    guid: 325c35921416c458895b75f31e362e66
   m_configObjects: {}

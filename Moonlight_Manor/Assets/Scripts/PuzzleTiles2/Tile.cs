@@ -29,10 +29,12 @@ public class Tile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        int index = -1;
+        int index = 0;
         if (other.CompareTag("Player")){
+            //bug to fix
             if (other.transform.parent == PlayerManager.Instance.Player1 ) index = 0;
             if (other.transform.parent == PlayerManager.Instance.Player2 ) index = 1;
+            Debug.Log(index);
             if (!manager.puzzleCompleted[index]){
                 if (isEntringTile){
                     StartCoroutine(manager.RevealPath());

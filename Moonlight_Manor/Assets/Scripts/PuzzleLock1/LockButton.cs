@@ -12,6 +12,8 @@ public class LockButton : MonoBehaviour
     public void GoBack(){
         PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = true;
         PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       
-        SceneManager.LoadScene("Main");
+        //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
+        SceneManager.UnloadSceneAsync("Lock");
+        //SceneManager.LoadScene("Main");
     }
 }

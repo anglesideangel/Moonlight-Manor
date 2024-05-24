@@ -21,7 +21,6 @@ public class DoorLaundryController: MonoBehaviour
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("WashingMachine"))
         {
-            Debug.Log("cant open");
             canOpen = false; 
         }
         if (collision.CompareTag("Player")){
@@ -33,7 +32,6 @@ public class DoorLaundryController: MonoBehaviour
     private void OnTriggerExit(Collider collision){
         if (collision.CompareTag("WashingMachine"))
             {
-                Debug.Log("can open");
                 canOpen = true; 
                 text.gameObject.SetActive(true);
             }

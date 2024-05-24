@@ -19,25 +19,24 @@ public class LockController : MonoBehaviour
    
     void Start()
     {
-        SceneManager.LoadScene("Main", LoadSceneMode.Additive);
-        SceneManager.sceneLoaded += OnSceneLoaded;
+        //SceneManager.LoadScene("Main", LoadSceneMode.Additive);
+        //SceneManager.sceneLoaded += OnSceneLoaded;
         result = new int[] { 0, 0, 0};
         correctResult = new int[] {5,8,7};
-        // correctResult = new int[] {1,0,0};
         Rotate.Rotated += UpdateResults;
         textCorrect.gameObject.SetActive(false);
         textFalse.gameObject.SetActive(false);
-        if (doorObject4 != null) {
-            doorObject4 = GameObject.Find("DoorObject (4)");
-            Debug.Log(doorObject4 != null);
-        }
+        // if (doorObject4 != null) {
+        //     doorObject4 = GameObject.Find("DoorObject (4)");
+        //     Debug.Log(doorObject4 != null);
+        // }
 
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == "Main")
-            { SceneManager.sceneLoaded -= OnSceneLoaded; }
+        //if (scene.name == "Main")
+         //   { SceneManager.sceneLoaded -= OnSceneLoaded; }
     }
 
     public void UpdateResults(string wheelName, int number)
@@ -53,11 +52,14 @@ public class LockController : MonoBehaviour
     {
         if ((result[0] == correctResult[0]) && (result[1] == correctResult[1]) && (result[2] == correctResult[2])) {
             textCorrect.gameObject.SetActive(true);
-            if (doorObject4 != null) {
-                doorObject4.SetActive(true);
-                doorObject4.GetComponent<DoorController>().isLocked = false;;
-            } else {Debug.LogError("DoorObject (4) not found in Main scene!");}
+            //doorObject4.SetActive(true);
+            //     doorObject4.GetComponent<DoorController>().isLocked = false;;
 
+            // if (doorObject4 != null) {
+            //     doorObject4.SetActive(true);
+            //     doorObject4.GetComponent<DoorController>().isLocked = false;;
+            // } else {Debug.LogError("DoorObject (4) not found in Main scene!");}
+            PuzzleManager.Instance.PuzzleCompleted(1);
         } else {
             textFalse.gameObject.SetActive(true);
         }

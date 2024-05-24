@@ -41,7 +41,7 @@ public class TileManager : MonoBehaviour
     public void AddCorrectTileFound(Tile tile, int index)
     {
         correctTilesFound[index].Add(tile);
-        CheckPuzzleCompleted(index);
+        CheckPathCompleted(index);
     }
 
     
@@ -56,7 +56,7 @@ public class TileManager : MonoBehaviour
     
     }
 
-    private void CheckPuzzleCompleted(int index)
+    private void CheckPathCompleted(int index)
     {
         
         if (correctTiles[index].Count != correctTilesFound[index].Count)
@@ -77,8 +77,21 @@ public class TileManager : MonoBehaviour
         
         text.gameObject.SetActive(true);
         puzzleCompleted[index] = true;
-        door.GetComponent<DoorNewSceneController>().OpenDoor();
+       // door.GetComponent<DoorNewSceneController>().OpenDoor();
+        CheckPuzzleCompleted();
     } 
+    private void CheckPuzzleCompleted()
+    {
+        foreach (bool b in puzzleCompleted)
+        { 
+            if (b == false)
+            {
+                return; 
+            }
+        }
+        PuzzleManager.Instance.PuzzleCompleted(2);
+    }
+
 
     public IEnumerator RevealPath()
     {

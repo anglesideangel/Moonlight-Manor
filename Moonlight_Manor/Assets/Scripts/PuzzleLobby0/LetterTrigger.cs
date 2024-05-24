@@ -7,13 +7,12 @@ using TMPro;
 using UnityEngine.UI;
 
 
-public class LockTrigger : MonoBehaviour
+public class LetterTrigger : MonoBehaviour
 {
     //public GameObject obj;
     public TMP_Text text;
     public bool triggerAction = false;
-    public bool opened= false;
-
+    public bool displayHint = false;
     
     
     void Start()
@@ -27,11 +26,6 @@ public class LockTrigger : MonoBehaviour
         {
             text.gameObject.SetActive(true);
             triggerAction = true;
-            if (collision.transform.parent != null)
-            {
-                PlayerManager.Instance.ActivePlayer = collision.transform.parent.gameObject; 
-                Debug.Log(PlayerManager.Instance.ActivePlayer);
-            }
         }
     }
 
@@ -39,7 +33,7 @@ public class LockTrigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             triggerAction = false;
-                text.gameObject.SetActive(false);
+            text.gameObject.SetActive(false);
         }
         
     }
@@ -51,16 +45,13 @@ public class LockTrigger : MonoBehaviour
         {
             if (triggerAction)
             {
-                PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = false;
-                PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = false;
-                SceneManager.LoadScene("Lock");
-                if (!opened)
-                {
-                    opened = true;
+                if (!displayHint){
+                    PuzzleManager.Instance.DisplayFirstHint();
+                    displayHint = true;
                 }
-                else
-                {
-                    opened = false;
+                else {
+                    PuzzleManager.Instance.HideFirstHint();
+                    displayHint = false;
                 }
             }
         }
