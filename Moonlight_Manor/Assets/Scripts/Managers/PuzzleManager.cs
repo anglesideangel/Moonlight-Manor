@@ -81,10 +81,23 @@ public class PuzzleManager : MonoBehaviour
             UIManager.Instance.DisableButton();
         }
         if (order !=0) UIManager.Instance.DisableButton();
-        yield return new WaitForSeconds(1);
-        doorUnlockedMessage.SetActive(true);
-        yield return new WaitForSeconds(delay);
-        doorUnlockedMessage.SetActive(false);
+        DoorSoundPlayer.Instance.Play();
+        // yield return new WaitForSeconds(1);
+        // doorUnlockedMessage.SetActive(true);
+        // yield return new WaitForSeconds(delay);
+        // doorUnlockedMessage.SetActive(false);
+        FadeAway fadeAway = doorUnlockedMessage.GetComponent<FadeAway>();
+        if (fadeAway != null)
+        {
+            fadeAway.ShowMessage();
+            yield return new WaitForSeconds(fadeAway.fadeInTime + fadeAway.visibleTime + fadeAway.fadeOutTime);
+        }
+        else
+        {
+            doorUnlockedMessage.SetActive(true);
+            yield return new WaitForSeconds(delay);
+            doorUnlockedMessage.SetActive(false);
+        }
     }
 
     public bool AllPuzzleCompleted(){

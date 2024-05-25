@@ -23,11 +23,6 @@ public class DoorController : MonoBehaviour
     }
 
 
-    public void SetState(bool unlocked)
-    {
-        isUnlocked = unlocked;
-        text.gameObject.SetActive(unlocked);
-    }
 
     public void UnlockDoor()
     {
