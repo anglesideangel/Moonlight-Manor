@@ -15,13 +15,12 @@ public class UIManager : MonoBehaviour
     private Button btn;
     public static UIManager Instance { get; private set; }
 
-
     void Start()
     {
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         btn = GetComponent<Button>();
        
@@ -84,6 +83,8 @@ public class UIManager : MonoBehaviour
     public void DisableButton(){
         btn.interactable = false;
     }
+
+
 
    
 }
