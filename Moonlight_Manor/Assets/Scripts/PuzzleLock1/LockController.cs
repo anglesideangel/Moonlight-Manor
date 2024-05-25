@@ -30,7 +30,7 @@ public class LockController : MonoBehaviour
         // if (doorObject4 == null) {
         //     Debug.Log("doorObject4 is null");
         // }
-
+        UIManager.Instance.HideHint();
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

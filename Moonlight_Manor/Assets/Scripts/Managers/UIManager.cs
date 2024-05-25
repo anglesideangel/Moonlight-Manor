@@ -58,14 +58,23 @@ public class UIManager : MonoBehaviour
 
     void TaskOnClick()
     {
+        Debug.Log("clicked");
         if (!closeButton) // Open button
         {
+            Debug.Log("here");
             ChangeImage(closeImage);
             hintBox.SetActive(true);
             closeButton = true;
         }
         else // Close button
         {
+            Debug.Log("là");
+            HideHint();
+        }
+    }
+
+    public void HideHint(){
+        if (closeButton){
             ChangeImage(openImage);
             hintBox.SetActive(false);
             closeButton = false;
