@@ -23,17 +23,17 @@ public class PlayerManager : MonoBehaviour
     }
 
     public void Assign(GameObject player){
-        if (Player1 == null)
+        if (Player1 == null){
             Player1 = player;
-        else if (Player2 == null)
+            Debug.Log("Player 1 has joined the game!");
+        }
+        else if (Player2 == null){
             Player2 = player;
-        else
+            Debug.Log("Player 2 has joined the game!");
+        }
+        else{
+            Debug.Log("Player 2 has joined the game!");
             throw new InvalidOperationException("Too many players!");
+        }
     }
-
-    void Update(){
-        if (Player1 != null) Debug.Log("Player 1 in game!");
-        if (Player2 != null) Debug.Log("Player 2 in game!");
-    }
-
 }

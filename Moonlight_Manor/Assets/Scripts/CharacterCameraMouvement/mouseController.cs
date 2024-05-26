@@ -20,6 +20,7 @@ public class mouseController : NetworkBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Application.isFocused) return;
        //if(!IsOwner) return;
       //  if (IsLocalPlayer) {
         float mouseX = Input.GetAxis("Mouse X");

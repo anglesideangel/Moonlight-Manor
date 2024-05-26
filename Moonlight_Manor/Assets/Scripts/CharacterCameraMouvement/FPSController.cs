@@ -24,6 +24,7 @@ public class FPSController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!Application.isFocused) return;
         
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
