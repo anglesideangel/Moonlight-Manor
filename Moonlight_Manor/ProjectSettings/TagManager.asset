@@ -9,6 +9,7 @@ TagManager:
   - DoorClosed
   - Tile
   - WashingMachine
+  - Pipe
   layers:
   - Default
   - TransparentFX
