@@ -1128,6 +1128,14 @@ PrefabInstance:
       propertyPath: NetworkConfig.EnableSceneManagement
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7829570838493285047, guid: 56ebaf6d50f2d724bb0b3159c28b582d, type: 3}
+      propertyPath: NetworkConfig.Prefabs.NetworkPrefabsLists.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7829570838493285047, guid: 56ebaf6d50f2d724bb0b3159c28b582d, type: 3}
+      propertyPath: NetworkConfig.Prefabs.NetworkPrefabsLists.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 003304a05d1c0e04f89db1d3cc39c9f4, type: 2}
     - target: {fileID: 8780049128772651203, guid: 56ebaf6d50f2d724bb0b3159c28b582d, type: 3}
       propertyPath: m_Name
       value: NetworkManager
@@ -1202,7 +1210,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879884564}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1879884566
 Camera:
   m_ObjectHideFlags: 0
