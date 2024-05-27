@@ -19,6 +19,7 @@ public class FPSController : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(transform.root.gameObject);
+        transform.parent.gameObject.AddComponent<PlayerStartPosition>();
     }
 
     // Update is called once per frame
