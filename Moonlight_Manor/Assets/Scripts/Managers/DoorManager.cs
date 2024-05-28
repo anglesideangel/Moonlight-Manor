@@ -11,7 +11,7 @@ public class DoorManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
         }
         else if (Instance != this)
         {
@@ -29,12 +29,13 @@ public class DoorManager : MonoBehaviour
     {
         if (order > 0 && order < doorsArray.Length)
         {
-            for (int i = 0; i <=order; i++) {
-                if (doorsArray[i] != null)
-                {
-                    doorsArray[i].UnlockDoor();
-                }
-            }
+            // for (int i = 0; i <=order; i++) {
+            //     if (doorsArray[i] != null)
+            //     {
+            //         doorsArray[i].UnlockDoor();
+            //     }
+            // }
+            doorsArray[order].UnlockDoor();
         }
     }
 
