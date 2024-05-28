@@ -8,8 +8,8 @@ TagManager:
   - Lock
   - DoorClosed
   - Tile
-  - WashingMachine
-  - Pipe
+  - Puzzle
+  - canPickUp
   layers:
   - Default
   - TransparentFX
