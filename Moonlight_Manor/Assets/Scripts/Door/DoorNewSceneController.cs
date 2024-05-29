@@ -7,30 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class DoorNewSceneController : MonoBehaviour
 {
-    public bool triggerAction = false;
-    public bool opened= false;
-    public GameObject objAnimator ;
-
-    void Start()
-    {
-     
-    }
-
+    bool collided =false;
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("Player")){
-            triggerAction = true;
-            //SceneManager.LoadScene("SecondScene");
+            if (!collided)
+            {
+                SceneManager.LoadScene("EndScene", LoadSceneMode.Additive);
+                collided = true;
+            }
         }
     }
-
-    public void OpenDoor()
-    {
-        if (!opened)
-        {
-            objAnimator.GetComponent<Animator>().Play("DoorOpen");
-            opened = true;
-        }
-    }
-  
-
 }

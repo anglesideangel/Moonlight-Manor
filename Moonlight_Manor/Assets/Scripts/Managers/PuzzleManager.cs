@@ -109,7 +109,7 @@ public class PuzzleManager : MonoBehaviour
     }
 
     public void DisplayHint(int order){
-        if (hintsArray[order] != null && order !=0)
+        if (order < 7 && hintsArray[order] != null && order !=0)
         { // temporary fix, to change
             hintToDisplay = hintsArray[order]; //.SetActive(true)
             UIManager.Instance.UpdateHintBox(hintToDisplay);
