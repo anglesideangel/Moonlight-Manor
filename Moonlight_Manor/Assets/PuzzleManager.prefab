@@ -25,8 +25,8 @@ Transform:
   m_GameObject: {fileID: 78637823627206950}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1789181091279026945}
@@ -191,8 +191,8 @@ Transform:
   m_GameObject: {fileID: 213512099099267187}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8648647952158961241}
@@ -707,8 +707,8 @@ Transform:
   m_GameObject: {fileID: 1407772608762990604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6799798243115563970}
@@ -739,8 +739,8 @@ Transform:
   m_GameObject: {fileID: 1418706388248362388}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2958379603979418044}
@@ -792,7 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 1999844464
+  GlobalObjectIdHash: 3093279957
   InScenePlacedSourceGlobalObjectIdHash: 0
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
@@ -1729,8 +1729,8 @@ Transform:
   m_GameObject: {fileID: 2908988860099898158}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9040742620090303410}
@@ -2041,8 +2041,8 @@ Transform:
   m_GameObject: {fileID: 3469216600954013945}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 86121201469546728}
@@ -3252,8 +3252,8 @@ Transform:
   m_GameObject: {fileID: 6578626239585913284}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1519.9395, y: 127.12567, z: 101.18451}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -709.82, y: 78.772, z: 101.18451}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 376583784700096769}
@@ -3287,8 +3287,8 @@ Transform:
   m_GameObject: {fileID: 6652371629282383097}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -811.42285, y: 488, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -380.11, y: 227.66, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6391322814450986975}
@@ -3977,8 +3977,8 @@ Transform:
   m_GameObject: {fileID: 8328413670250313141}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.84961, y: 9.073608, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 9.9627, y: 30.067, z: 0}
+  m_LocalScale: {x: 0.42, y: 0.42, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3282950330445122332}
@@ -4139,11 +4139,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 1
+  m_ReferenceResolution: {x: 800, y: 500}
+  m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
