@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PuzzlePiece : MonoBehaviour
 {
-    public Vector3 targetPosition;
+    public int number; // Number assigned to the puzzle piece
+    public Vector3 targetPosition; // Target position when moving the puzzle piece
+    public bool isMoving; // Flag to track if the puzzle piece is currently moving
     public float moveSpeed = 50f;
-    public bool isMoving = false;
 
     void Update()
     {
@@ -23,9 +24,9 @@ public class PuzzlePiece : MonoBehaviour
 
     void OnMouseDown()
     {
-        if (!isMoving)
+        if (!isMoving && SlidingPuzzle.Instance != null)
         {
-            slidingPuzzle.Instance.MovePiece(this);
+            SlidingPuzzle.Instance.MovePiece(this);
         }
     }
 }
