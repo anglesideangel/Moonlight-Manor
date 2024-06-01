@@ -1,13 +1,13 @@
 using UnityEngine;
 using TMPro;
+using Unity.Netcode;
 
-public class DoorController : MonoBehaviour
+public class DoorController : NetworkBehaviour
 {
     
     public TMP_Text text;
     public bool triggerAction = false;
-    public bool opened = false;
-    public GameObject currentDoor;
+    public NetworkVariable<bool> opened = new NetworkVariable<bool>(false);
     public bool isUnlocked = false;
     public int order;
     
@@ -22,7 +22,14 @@ public class DoorController : MonoBehaviour
         DoorManager.Instance.AddDoor(this, order);
     }
 
+    public override void OnNetworkSpawn(){
+        opened.OnValueChanged += DoorStateChange;
+    }
 
+    public override void OnNetworkDespawn()
+    {
+        opened.OnValueChanged -= DoorStateChange;
+    }
 
     public void UnlockDoor()
     {
@@ -46,24 +53,29 @@ public class DoorController : MonoBehaviour
         {
             triggerAction = false;
             // text.gameObject.SetActive(false);
-            if (opened) opened = false;
-            currentDoor = null;
+            if (opened.Value) ToggleDoorServerRpc();
         }
+    }
+
+    [Rpc(SendTo.Server)]
+    void ToggleDoorServerRpc(){
+        opened.Value = !opened.Value;
     }
         
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.E)){
             if (triggerAction && gameObject != null ){
-                if (!opened ){
-                    gameObject.GetComponentInParent<Animator>().Play("DoorOpen");
-                    opened = true;
-                } else {
-                    gameObject.GetComponentInParent<Animator>().Play("DoorClose");
-                    opened = false;
-                }
-                
+                ToggleDoorServerRpc();                
             } 
+        }
+    }
+
+    void DoorStateChange(bool previous, bool current){
+        if (opened.Value){
+            gameObject.GetComponentInParent<Animator>().Play("DoorOpen");
+        } else {
+            gameObject.GetComponentInParent<Animator>().Play("DoorClose");
         }
     }
    

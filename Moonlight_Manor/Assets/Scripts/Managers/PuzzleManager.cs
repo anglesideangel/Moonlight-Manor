@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using Unity.Netcode;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class PuzzleManager : MonoBehaviour
+public class PuzzleManager : NetworkBehaviour
 {
     // Start is called before the first frame update
-    private bool[] completedPuzzles = { false, false, false, false, false, false, false }; // 7 because 1st clue is in the lobby
+    private NetworkVariable<int> completedPuzzles = new NetworkVariable<int>(0); // 0b00000000, rightmost is puzzle 0, then 1, etc.
     public GameObject[] hintsArray = new GameObject[7]; // 7 because 1st clue is in the lobby
     public GameObject doorUnlockedMessage;
     public GameObject endGameMessage;
@@ -35,12 +37,15 @@ public class PuzzleManager : MonoBehaviour
         {
             button.interactable =false;
         }
-        
     }
+
+    public override void OnNetworkSpawn(){
+        completedPuzzles.OnValueChanged += OnPuzzleCompleted;
+    }
+
     void Update(){
         if (debugMode)
         {
-            
             for (int i = 0; i < 7; i++)
             {
                 DoorManager.Instance.UnlockNextDoor(i + 1);
@@ -54,9 +59,16 @@ public class PuzzleManager : MonoBehaviour
         }
     }
 
-    public void PuzzleCompleted(int order)
-    {
-        completedPuzzles[order] = true;
+    void OnPuzzleCompleted(int prev, int cur){
+        int dif = cur - prev; //only 1 bit should be enabled, the position of it is our order
+        int order = 0;
+        while (dif > 1)
+        {
+            dif >>= 1;
+            order++;
+        }
+        //order is now the order of our changed puzzle
+
         DoorManager.Instance.UnlockNextDoor(order+1);
         StartCoroutine(Activate(order,3f));
         // griser case 
@@ -66,6 +78,20 @@ public class PuzzleManager : MonoBehaviour
         colors.disabledColor = new Color(0.64f,0.62f,0.76f,1);
         button.colors = colors;
         CheckAllPuzzlesCompleted();
+    }
+
+    public void PuzzleCompleted(int order)
+    {
+        CompletePuzzleServerRpc(order);   
+    }
+
+    [Rpc(SendTo.Server)]
+    void CompletePuzzleServerRpc(int order){
+        completedPuzzles.Value |= 1 << order;
+    }
+
+    bool GetPuzzleCompleted(int order){
+        return (completedPuzzles.Value & (1 << order-1)) != 0;
     }
 
     private IEnumerator Activate(int order, float delay)
@@ -101,9 +127,9 @@ public class PuzzleManager : MonoBehaviour
     }
 
     public bool AllPuzzleCompleted(){
-        foreach (bool b in completedPuzzles)
+        for(int i = 0; i < 7; i++)
         {
-            if (!b) return false;
+            if (!GetPuzzleCompleted(i)) return false;
         }
         return true;
     }

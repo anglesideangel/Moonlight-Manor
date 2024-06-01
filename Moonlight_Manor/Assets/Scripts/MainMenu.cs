@@ -16,17 +16,27 @@ public class MainMenu : MonoBehaviour
     public void HostGame()
     {
         NetworkManager.Singleton.StartHost();
-        SceneManager.LoadScene("Main");
+        //StartCoroutine(WaitForClients());
+        NetworkManager.Singleton.SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 
     public void JoinGame()
     {
         NetworkManager.Singleton.StartClient();
-        SceneManager.LoadScene("Main");
     }
 
     public void QuitGame()
     {
         Application.Quit();
+    }
+
+    private IEnumerator WaitForClients()
+    {
+        while (NetworkManager.Singleton.ConnectedClients.Count <= 1)
+        {
+            yield return null;
+        }
+
+        NetworkManager.Singleton.SceneManager.LoadScene("Main", LoadSceneMode.Single);
     }
 }
