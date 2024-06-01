@@ -13,6 +13,7 @@ public class PlayerNetworkConnector : NetworkBehaviour
 
     void Start(){
         SceneManager.sceneLoaded += OnSceneLoaded;
+        prevScene = SceneManager.GetActiveScene().name;
         MoveCharacter();
     }
 
@@ -24,18 +25,20 @@ public class PlayerNetworkConnector : NetworkBehaviour
         else
             playerCamera.gameObject.SetActive(false);
 
+        prevScene = SceneManager.GetActiveScene().name;
         MoveCharacter();
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (prevScene == "")
+        if (prevScene == "TitleScreen")
             MoveCharacter();
         
         prevScene = scene.name;
     }
 
     void MoveCharacter(){
+        Debug.Log("Moving character");
         transform.SetPositionAndRotation(newStartPosition, Quaternion.Euler(newStartRotation));
     }
 }
