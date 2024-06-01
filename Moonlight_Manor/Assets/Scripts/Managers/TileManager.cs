@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 public class TileManager : MonoBehaviour
 {
-    public TMP_Text[] texts = new TMP_Text[2];
+    public Canvas[] canvas = new Canvas[2];
 
     private List<Tile>[] correctTiles;
     private List<Tile>[] correctTilesFound;
@@ -29,9 +29,9 @@ public class TileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (TMP_Text text in texts)
+        foreach (Canvas canva in canvas)
         {
-            if (text != null) text.gameObject.SetActive(false);
+            if (canva != null) canva.gameObject.SetActive(false);
         }
 
     }
@@ -59,41 +59,47 @@ public class TileManager : MonoBehaviour
     
     }
 
+   private IEnumerator DisplayMessage(Canvas canvas, float duration)
+    {
+        canvas.gameObject.SetActive(true);
+        yield return new WaitForSeconds(duration);
+        canvas.gameObject.SetActive(false);
+        if (CheckPuzzleCompleted())
+        {
+            PuzzleManager.Instance.PuzzleCompleted(2);
+        }
+    }
+
     private void CheckPathCompleted(int index)
     {
-        
         if (correctTiles[index].Count != correctTilesFound[index].Count)
         {
             return;
-            
         }
-       
-        
+
         foreach (Tile tile in correctTiles[index])
         { 
-            // no order
             if (!correctTilesFound[index].Contains(tile))
             {
                 return; 
             }
         }
-        Debug.Log(texts[index]);
-        Debug.Log(texts[index].gameObject);
-        texts[index].gameObject.SetActive(true);
+        
+        StartCoroutine(DisplayMessage(canvas[index], 2.0f)); 
         puzzleCompleted[index] = true;
-       // door.GetComponent<DoorNewSceneController>().OpenDoor();
+        // door.GetComponent<DoorNewSceneController>().OpenDoor();
         CheckPuzzleCompleted();
-    } 
-    private void CheckPuzzleCompleted()
+    }
+    private bool CheckPuzzleCompleted()
     {
         foreach (bool b in puzzleCompleted)
         { 
             if (b == false)
             {
-                return; 
+                return false; 
             }
         }
-        PuzzleManager.Instance.PuzzleCompleted(2);
+        return true;
     }
 
 
@@ -102,9 +108,9 @@ public class TileManager : MonoBehaviour
         for (int index = 0; index < 2 ; index++){
             foreach (Tile tile in correctTiles[index])
             { 
-                if (tile.GetComponent<Renderer>().material.color != Color.green){
+                //if (tile.GetComponent<Renderer>().material.color != Color.green){
                     tile.ChangeColor(index);
-                }
+               // }
             }
         }
         
@@ -112,7 +118,11 @@ public class TileManager : MonoBehaviour
         for (int index = 0; index <2 ; index++){
             foreach (Tile tile in correctTiles[index])
             { 
+                if (!correctTilesFound[index].Contains(tile))
+            {
                 tile.ResetColor();
+            }
+               
             }
         }
 

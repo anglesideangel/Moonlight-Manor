@@ -44,5 +44,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab88d18a36ed44b6a026f6e0165b36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
-  foundStartingTile: 0
+  texts:
+  - {fileID: 0}
+  - {fileID: 0}
+  foundStartTile: 0000
+  puzzleCompleted: 0000
+  door: {fileID: 0}

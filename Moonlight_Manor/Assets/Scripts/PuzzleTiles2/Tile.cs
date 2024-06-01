@@ -90,8 +90,22 @@ public class Tile : MonoBehaviour
 
     public void ChangeColor(int index)
     {
-        if (index == 0) GetComponent<Renderer>().material.color = Color.green;
-        if (index == 1) GetComponent<Renderer>().material.color = Color.blue;
+        if (index == 0) {
+            if (isStartTileList[index]) {
+                GetComponent<Renderer>().material.color = new Color(0f, 0.39f, 0f);
+            } else {
+                GetComponent<Renderer>().material.color = Color.green;
+            }
+            
+        }
+        if (index == 1) {
+            if (isStartTileList[index]) {
+
+                GetComponent<Renderer>().material.color = new Color(0f, 0f, 0.545f);
+            } else {
+                GetComponent<Renderer>().material.color = Color.blue;
+            }
+        }
     }
 
 }
