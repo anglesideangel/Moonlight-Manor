@@ -5,7 +5,7 @@ using UnityEngine;
 using TMPro;
 public class TileManager : MonoBehaviour
 {
-    public TMP_Text[] texts = new TMP_Text[2];
+    public TMP_Text text;
 
     private List<Tile>[] correctTiles;
     private List<Tile>[] correctTilesFound;
@@ -29,10 +29,7 @@ public class TileManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        foreach (TMP_Text text in texts)
-        {
-            if (text != null) text.gameObject.SetActive(false);
-        }
+        text.gameObject.SetActive(false);
 
     }
 
@@ -77,9 +74,8 @@ public class TileManager : MonoBehaviour
                 return; 
             }
         }
-        Debug.Log(texts[index]);
-        Debug.Log(texts[index].gameObject);
-        texts[index].gameObject.SetActive(true);
+        
+        text.gameObject.SetActive(true);
         puzzleCompleted[index] = true;
        // door.GetComponent<DoorNewSceneController>().OpenDoor();
         CheckPuzzleCompleted();
