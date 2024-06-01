@@ -8,9 +8,8 @@ using UnityEngine.UI;
 
 public class PuzzleLaundry: MonoBehaviour
 {
-    private bool canOpen = true;
    // public bool isLocked;
-    
+    public bool exit;
     void Start()
     {
     }
@@ -19,16 +18,12 @@ public class PuzzleLaundry: MonoBehaviour
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("WashingMachine"))
         {
-            canOpen = false; 
+            PuzzleManager.Instance.PuzzleCompleted(4);
         }
         
     }
 
     private void OnTriggerExit(Collider collision){
-        if (collision.CompareTag("WashingMachine"))
-            {
-                PuzzleManager.Instance.PuzzleCompleted(4);
-            }
         
     }
     
