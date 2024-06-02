@@ -10682,7 +10682,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 253857183}
   triggerAction: 0
-  newSceneName: Pipes
+  newSceneName: Pipes2
 --- !u!65 &545615894
 BoxCollider:
   m_ObjectHideFlags: 0
