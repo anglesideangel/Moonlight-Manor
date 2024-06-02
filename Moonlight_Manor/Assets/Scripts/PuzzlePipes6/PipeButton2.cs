@@ -15,7 +15,7 @@ public class PipeButton2 : MonoBehaviour
         PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Pipes2");
-        SceneManager.LoadScene("Main");
+        //SceneManager.LoadScene("Main");
         InfoManager.Instance.DisplayInfo();
     }
 }
