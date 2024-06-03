@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class PuzzleManager : NetworkBehaviour
 {
     // Start is called before the first frame update
-    private NetworkVariable<int> completedPuzzles = new NetworkVariable<int>(0); // 0b00000000, rightmost is puzzle 0, then 1, etc.
+    private NetworkVariable<char> completedPuzzles = new NetworkVariable<char>((char)0); // 0b00000000, rightmost is puzzle 0, then 1, etc.
     public GameObject[] hintsArray = new GameObject[7]; // 7 because 1st clue is in the lobby
     public GameObject doorUnlockedMessage;
     public GameObject endGameMessage;
@@ -59,8 +59,8 @@ public class PuzzleManager : NetworkBehaviour
         }
     }
 
-    void OnPuzzleCompleted(int prev, int cur){
-        int dif = cur - prev; //only 1 bit should be enabled, the position of it is our order
+    void OnPuzzleCompleted(char prev, char cur){
+        int dif = (int)cur - (int)prev; //only 1 bit should be enabled, the position of it is our order
         int order = 0;
         while (dif > 1)
         {
@@ -87,7 +87,8 @@ public class PuzzleManager : NetworkBehaviour
 
     [Rpc(SendTo.Server)]
     void CompletePuzzleServerRpc(int order){
-        completedPuzzles.Value |= 1 << order;
+        int newVal = (int)completedPuzzles.Value | 1 << order;
+        completedPuzzles.Value = (char)newVal;
     }
 
     bool GetPuzzleCompleted(int order){
