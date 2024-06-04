@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PickUp : MonoBehaviour
@@ -14,11 +15,14 @@ public class PickUp : MonoBehaviour
 
     public GameObject cameraObject;
 
+    public TMP_Text text;
+
     void Start(){
         JigsawPuzzleLogic jigsaw = FindObjectOfType<JigsawPuzzleLogic>();
         pieces = jigsaw.pieces;
         OgPos = jigsaw.originalPosition;
         PlayerManager.Instance.mainCamera.enabled = false;
+        
     }
 
     private Vector3 GetMousePos(){
@@ -27,7 +31,6 @@ public class PickUp : MonoBehaviour
     private void OnMouseDown(){
         mousePosition = Input.mousePosition - GetMousePos();
         pickedUpPiece = transform;
-
     }
     private void OnMouseDrag(){
         // Get the current mouse position in screen space
@@ -55,8 +58,9 @@ public class PickUp : MonoBehaviour
             pickedUpPiece.position = targetPosition;
             pickedUpPiece.GetComponent<MeshCollider>().enabled = false;
             piecesCorrect++;
-            Debug.Log(piecesCorrect);
             if(piecesCorrect == 35){
+                text.gameObject.SetActive(true);
+                PuzzleManager.Instance.PuzzleCompleted(3);
                 Debug.Log("COMPLETE!");
             }
 

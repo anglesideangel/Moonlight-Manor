@@ -1,5 +1,6 @@
 using UnityEngine;
 using System;
+
 public class PlayerManager : MonoBehaviour
 {
     public static PlayerManager Instance { get; private set; }
