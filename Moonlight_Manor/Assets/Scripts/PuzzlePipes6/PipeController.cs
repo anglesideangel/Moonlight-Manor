@@ -19,8 +19,6 @@ public class PipeController : MonoBehaviour
     public Material[] materials;
     Renderer rend;
 
-    public bool pipes1Completed = false;
-
     void Awake()
     {
         Instance = this;
@@ -96,8 +94,7 @@ public class PipeController : MonoBehaviour
             }
         }
         textCorrect.gameObject.SetActive(true);
-        pipes1Completed = true;
-        LeakChecker.Instance.CheckBothPuzzlesCompleted(); // Check both puzzles completion 
+        PuzzleManager.Instance.GetComponentInChildren<LeakChecker>().Pipe1Completed(); // Check both puzzles completion 
     }
         else 
         {
@@ -115,10 +112,5 @@ public class PipeController : MonoBehaviour
     private void OnDestroy()
     {
         pipeRotate.Rotated -= UpdateResults;
-    }
-
-    public bool IsPipes1Completed()
-    {
-        return pipes1Completed;
     }
 }

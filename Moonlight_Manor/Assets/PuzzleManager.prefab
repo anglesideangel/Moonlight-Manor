@@ -758,6 +758,7 @@ GameObject:
   - component: {fileID: -6092802217117736750}
   - component: {fileID: 2282627909136262548}
   - component: {fileID: 3206624525710173152}
+  - component: {fileID: -7704992071444081223}
   m_Layer: 0
   m_Name: PuzzleManager
   m_TagString: Untagged
@@ -850,6 +851,22 @@ MonoBehaviour:
   puzzle1Completed:
     m_InternalValue: 0
   puzzle2Completed:
+    m_InternalValue: 0
+--- !u!114 &-7704992071444081223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801068541080725000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c1ed4991b62b844590754bbaa53e9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pipes1Completed:
+    m_InternalValue: 0
+  pipes2Completed:
     m_InternalValue: 0
 --- !u!1 &1850608059037339617
 GameObject:

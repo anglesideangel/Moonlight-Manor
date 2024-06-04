@@ -43,6 +43,7 @@ public class Pipes2Trigger : NetworkBehaviour
             if (triggerAction)
             {
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = false;
+                if (PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>() != null)
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = false;
                 SceneManager.LoadScene(newSceneName, LoadSceneMode.Additive);
                 UIManager.Instance.HideInfo();

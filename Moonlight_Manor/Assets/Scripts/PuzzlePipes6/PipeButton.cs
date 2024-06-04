@@ -12,7 +12,8 @@ public class PipeButton : MonoBehaviour
     }
     public void GoBack(){
         PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = true;
-        PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       
+        if (PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>() != null)
+            PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Pipes");
         //SceneManager.LoadScene("Main");

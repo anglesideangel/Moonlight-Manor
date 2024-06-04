@@ -5,35 +5,35 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class LeakChecker : MonoBehaviour
+public class LeakChecker : NetworkBehaviour
 {
-    public static LeakChecker Instance;
+    public NetworkVariable<bool> pipes1Completed = new NetworkVariable<bool>();
+    public NetworkVariable<bool> pipes2Completed = new NetworkVariable<bool>();
 
-    public bool pipes1Completed = false;
-    public bool pipes2Completed = false;
-
-    void Awake()
+    void Start()
     {
-        Instance = this;
+        pipes1Completed.OnValueChanged += OnPipeCompleted;
+        pipes2Completed.OnValueChanged += OnPipeCompleted;
     }
 
-    public void CheckBothPuzzlesCompleted()
+    [Rpc(SendTo.Server)]
+    public void Pipe2CompltedServerRpc(){
+        Debug.Log("Pipe 2 Completed!");
+        pipes2Completed.Value = true;
+    }
+
+    public void Pipe1Completed(){
+        Debug.Log("Pipe 1 Completed!");
+        pipes1Completed.Value = true;
+    }
+
+    public void OnPipeCompleted(bool prev, bool cur)
     {
-        if (PipeController.Instance.IsPipes1Completed())
-        {
-            pipes1Completed = true;
-            Debug.Log("pipes");
-        }
-        if (PipeController2.Instance.IsPipes2Completed())
-        {
-            pipes2Completed = true;
-            Debug.Log("pipes2");
-        }
-        if (pipes1Completed && pipes2Completed)
+        if (pipes1Completed.Value && pipes2Completed.Value)
         {
             PuzzleManager.Instance.PuzzleCompleted(6);
-            // Both puzzles are completed, perform desired action
             Debug.Log("Both puzzles are completed!");
         }
     }
