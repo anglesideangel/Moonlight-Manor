@@ -1202,6 +1202,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6749009209050856360, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6749009209050856360, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7340930097171103287, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
       value: "          Room 5\r\n   Sometimes all you \r\n   need to do is PUSH
