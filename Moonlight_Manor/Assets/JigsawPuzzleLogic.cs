@@ -4,11 +4,8 @@ using UnityEngine;
 
 public class JigsawPuzzleLogic : MonoBehaviour
 {
-    // Start is called before the first frame update
-    //public Transform[,] pieceGrid = new Transform[5,7];
     public List<Transform> pieces = new List<Transform>();
     public List<Vector3> originalPosition = new List<Vector3>();
-    public float snapThreshold = 0.5f;
 
     void Start()
     {  
@@ -22,8 +19,6 @@ public class JigsawPuzzleLogic : MonoBehaviour
             originalPosition.Add(piece.position);
         }
     }
-
-    // Update is called once per frame
     void ScramblePieces()
     {
         Transform[] pieces = new Transform[transform.childCount - 1];

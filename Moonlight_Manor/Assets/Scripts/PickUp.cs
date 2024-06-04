@@ -9,10 +9,7 @@ public class PickUp : MonoBehaviour
     private List<Vector3> OgPos;
     private Transform pickedUpPiece = null;
     Vector3 mousePosition;
-    int rows = 7;
-    int columns = 5;
     float width;
-    float depth ;
 
     void Start(){
         JigsawPuzzleLogic jigsaw = FindObjectOfType<JigsawPuzzleLogic>();
@@ -45,17 +42,10 @@ public class PickUp : MonoBehaviour
 
     private void snapToPosition(){
         int pieceIndex = pieces.IndexOf(pickedUpPiece);
-        int row = pieceIndex / rows;
-        int col = pieceIndex % rows;
 
         width = GetPieceWidth(pickedUpPiece);
-        depth = GetPieceDepth(pickedUpPiece);
 
         Vector3 targetPosition = OgPos[pieceIndex];
-        // Debug.Log(pickedUpPiece.position + " ");
-        // Debug.Log(targetPosition);
-        Debug.Log(width/2);
-        Debug.Log(Vector3.Distance(pickedUpPiece.position,targetPosition));
 
         if(Vector3.Distance(pickedUpPiece.position,targetPosition) < width/2){
             pickedUpPiece.position = targetPosition;
@@ -71,11 +61,4 @@ public class PickUp : MonoBehaviour
         return pieceRender.bounds.size.x;
     }
 
-    private float GetPieceDepth(Transform piece){
-        Renderer pieceRender = piece.GetComponent<Renderer>();
-        return pieceRender.bounds.size.z;
-    }
-
 }
-
- // pickedUpPiece.GetComponent<MeshCollider>().enabled = false;
