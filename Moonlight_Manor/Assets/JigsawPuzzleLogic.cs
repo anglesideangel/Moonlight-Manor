@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class JigsawPuzzleLogic : MonoBehaviour
 {
-    Vector3 mousePosition;
     // Start is called before the first frame update
+    //public Transform[,] pieceGrid = new Transform[5,7];
+    public List<Transform> pieces = new List<Transform>();
+    public List<Vector3> originalPosition = new List<Vector3>();
+    public float snapThreshold = 0.5f;
+
     void Start()
-    {
-        //ScramblePieces();
+    {  
+        InitializePieces();
+        SaveOriginalPosition();
+        ScramblePieces();
+    }
+
+    void SaveOriginalPosition(){
+        foreach(Transform piece in pieces){
+            originalPosition.Add(piece.position);
+        }
     }
 
     // Update is called once per frame
@@ -26,22 +38,10 @@ public class JigsawPuzzleLogic : MonoBehaviour
             pieces[j].position = temp;
         }
     }
-    private Vector3 GetMousePos(){
-        return Camera.main.WorldToScreenPoint(transform.position);
-    }
-    private void OnMouseDown(){
-        mousePosition = Input.mousePosition - GetMousePos();
-        Debug.Log(gameObject.name);
-
-    }
-    private void OnMouseDrag(){
-        // Get the current mouse position in screen space
-        Vector3 currentMousePosition = Input.mousePosition - mousePosition;
-        // Convert the screen space position to world space
-        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(currentMousePosition);
-        
-        // Only take x and z coordinates, keep y the same as the object's current position
-        transform.position = new Vector3(worldPosition.x, transform.position.y, worldPosition.z);
+    void InitializePieces(){
+        for(int i = 0; i < 35; i++){
+            pieces.Add(transform.GetChild(i));
+        }
     }
 }
 
