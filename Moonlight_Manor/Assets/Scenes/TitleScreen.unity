@@ -1018,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 1133502713604362561, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
       value: "             Room 1\r\n\n     The [ ? ] under the 3  \n     is the
-        first number. \n\n       Press C to go back"
+        first number.\n            of the code. \n\n       Press C to go back"
       objectReference: {fileID: 0}
     - target: {fileID: 1133502713604362561, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_fontSize
