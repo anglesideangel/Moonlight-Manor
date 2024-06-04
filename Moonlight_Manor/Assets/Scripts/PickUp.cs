@@ -28,7 +28,7 @@ public class PickUp : MonoBehaviour
     }
     private void OnMouseDrag(){
         // Get the current mouse position in screen space
-        Vector3 currentMousePosition = Input.mousePosition - mousePosition;
+        Vector3 currentMousePosition = Input.mousePosition;
         // Convert the screen space position to world space
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(currentMousePosition);
         
