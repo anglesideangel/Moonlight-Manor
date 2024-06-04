@@ -10,13 +10,12 @@ public class PickUp : MonoBehaviour
     private Transform pickedUpPiece = null;
     Vector3 mousePosition;
     float width;
-    int piecesCorrect;
+    static int piecesCorrect = 0;
 
     void Start(){
         JigsawPuzzleLogic jigsaw = FindObjectOfType<JigsawPuzzleLogic>();
         pieces = jigsaw.pieces;
         OgPos = jigsaw.originalPosition;
-        int piecesCorrect = 0;
     }
 
     private Vector3 GetMousePos(){
@@ -25,7 +24,6 @@ public class PickUp : MonoBehaviour
     private void OnMouseDown(){
         mousePosition = Input.mousePosition - GetMousePos();
         pickedUpPiece = transform;
-        Debug.Log(pickedUpPiece.name);
 
     }
     private void OnMouseDrag(){
@@ -53,6 +51,7 @@ public class PickUp : MonoBehaviour
             pickedUpPiece.position = targetPosition;
             pickedUpPiece.GetComponent<MeshCollider>().enabled = false;
             piecesCorrect++;
+            Debug.Log(piecesCorrect);
             if(piecesCorrect == 35){
                 Debug.Log("COMPLETE!");
             }
