@@ -48,7 +48,8 @@ public class PuzzleManager : NetworkBehaviour
         {
             for (int i = 0; i < 7; i++)
             {
-                DoorManager.Instance.UnlockNextDoor(i + 1);
+                if (DoorManager.Instance != null)
+                    DoorManager.Instance.UnlockNextDoor(i + 1);
             }
         }
     }
