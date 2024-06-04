@@ -18,7 +18,8 @@ public class PuzzleLaundry: MonoBehaviour
     private void OnTriggerEnter(Collider collision){
         if (collision.CompareTag("WashingMachine"))
         {
-            PuzzleManager.Instance.PuzzleCompleted(4);
+            Debug.Log("ahh");
+            PuzzleManager.Instance.PuzzleCompleted(5);
         }
         
     }
