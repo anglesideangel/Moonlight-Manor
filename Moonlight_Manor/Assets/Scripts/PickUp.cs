@@ -33,7 +33,7 @@ public class PickUp : MonoBehaviour
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(currentMousePosition);
         
         // Only take x and z coordinates, keep y the same as the object's current position
-        transform.position = new Vector3(worldPosition.z, transform.position.y, worldPosition.x);
+        transform.position = new Vector3(worldPosition.x, transform.position.y, worldPosition.z);
     }
 
     private void OnMouseUp(){
