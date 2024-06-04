@@ -5,6 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class SlidingButton : MonoBehaviour
 {
+    public GameObject obj;
+  
+    public void Confirm(){
+        obj.GetComponent<SlidingPuzzle2>().CheckResults();
+    }
     public void GoBack(){
         PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = true;
         PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       

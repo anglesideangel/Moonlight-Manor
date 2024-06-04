@@ -8,14 +8,24 @@ using UnityEngine.UI;
 
 public class PipeController2 : MonoBehaviour
 {
+    public static PipeController2 Instance;
+
     private int[] result;
     private int[] correctResult;
     public TMP_Text textCorrect;
     public TMP_Text textFalse;
-    public GameObject Pipes;
+    public GameObject Pipes2;
    
     public Material[] materials;
     Renderer rend;
+
+    public bool pipes2Completed = false;
+
+    void Awake()
+    {
+        Instance = this;
+        // Other initialization code...
+    }
 
     void Start()
     {   
@@ -26,7 +36,7 @@ public class PipeController2 : MonoBehaviour
         pipeRotate.Rotated += UpdateResults;
         textCorrect.gameObject.SetActive(false);
         textFalse.gameObject.SetActive(false);
-     
+        
         //UIManager.Instance.HideHint();
     }
 
@@ -54,44 +64,45 @@ public class PipeController2 : MonoBehaviour
             for (int i = 0; i < 27; i++)
         {
             // Get the Renderer component of the current GameObject
-            Renderer renderer = Pipes.transform.GetChild(i).GetComponent<Renderer>();
+            Renderer renderer = Pipes2.transform.GetChild(i).GetComponent<Renderer>();
 
             // Check if a Renderer component is attached
             if (renderer != null)
             {
-                // Assign the material index based on your conditions
-                int materialIndex;
-                if (i == 2 || i == 12 || i == 21)
-                {
-                    materialIndex = 0;
-                }
-                else if (i == 5 || i == 7 || i == 16 || i == 25 || i == 26)
-                {
-                    materialIndex = 1;
-                }
-                else if (i == 8 || i == 10 || i == 19)
-                {
-                    materialIndex = 2;
-                }
-                else if (i == 1 || i == 6 || i == 15 || i == 17 || i == 23)
-                {
-                    materialIndex = 3;
-                }
-                else
-                {
-                    materialIndex = 4;
-                }
+            // Assign the material index based on your conditions
+                    int materialIndex;
+                    if (i == 2 || i == 12 || i == 21)
+                    {
+                        materialIndex = 0;
+                    }
+                    else if (i == 5 || i == 7 || i == 16 || i == 25 || i == 26)
+                    {
+                        materialIndex = 1;
+                    }
+                    else if (i == 8 || i == 10 || i == 19)
+                    {
+                        materialIndex = 2;
+                    }
+                    else if (i == 1 || i == 6 || i == 15 || i == 17 || i == 23)
+                    {
+                        materialIndex = 3;
+                    }
+                    else
+                    {
+                        materialIndex = 4;
+                    }
                 // Set the material of the Renderer component
-                renderer.material = materials[materialIndex];
+                renderer.material = materials[materialIndex]; 
             }
         }
         textCorrect.gameObject.SetActive(true);
+        pipes2Completed = true;
+        LeakChecker.Instance.CheckBothPuzzlesCompleted(); // Check both puzzles completion 
     }
         else {
             StartCoroutine(ShowErrorForFewSeconds());
         }
     }
-            //PuzzleManager.Instance.PuzzleCompleted(3);
 
     private System.Collections.IEnumerator ShowErrorForFewSeconds()
     {
@@ -103,5 +114,10 @@ public class PipeController2 : MonoBehaviour
     private void OnDestroy()
     {
         pipeRotate.Rotated -= UpdateResults;
+    }
+
+    public bool IsPipes2Completed()
+    {
+        return pipes2Completed;
     }
 }

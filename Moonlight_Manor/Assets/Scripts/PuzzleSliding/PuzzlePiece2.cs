@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuzzlePiece : MonoBehaviour
+public class PuzzlePiece2 : MonoBehaviour
 {
     public int number; // Number assigned to the puzzle piece
     public Vector3 targetPosition; // Target position when moving the puzzle piece
@@ -26,7 +26,7 @@ public class PuzzlePiece : MonoBehaviour
     {
         if (!isMoving)
         {
-            SlidingPuzzle1.Instance.MovePiece(this);
+            SlidingPuzzle2.Instance.MovePiece(this);
         }
-    }    
+    }
 }

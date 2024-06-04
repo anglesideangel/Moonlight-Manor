@@ -8,6 +8,8 @@ using UnityEngine.UI;
 
 public class PipeController : MonoBehaviour
 {
+    public static PipeController Instance;
+
     private int[] result;
     private int[] correctResult;
     public TMP_Text textCorrect;
@@ -16,6 +18,14 @@ public class PipeController : MonoBehaviour
    
     public Material[] materials;
     Renderer rend;
+
+    public bool pipes1Completed = false;
+
+    void Awake()
+    {
+        Instance = this;
+        // Other initialization code...
+    }
 
     void Start()
     {   
@@ -26,7 +36,7 @@ public class PipeController : MonoBehaviour
         pipeRotate.Rotated += UpdateResults;
         textCorrect.gameObject.SetActive(false);
         textFalse.gameObject.SetActive(false);
-     
+        
         //UIManager.Instance.HideHint();
     }
 
@@ -82,16 +92,18 @@ public class PipeController : MonoBehaviour
                     materialIndex = 4;
                 }
                 // Set the material of the Renderer component
-                renderer.material = materials[materialIndex];
+                renderer.material = materials[materialIndex]; 
             }
         }
         textCorrect.gameObject.SetActive(true);
+        pipes1Completed = true;
+        LeakChecker.Instance.CheckBothPuzzlesCompleted(); // Check both puzzles completion 
     }
-        else {
+        else 
+        {
             StartCoroutine(ShowErrorForFewSeconds());
         }
     }
-            //PuzzleManager.Instance.PuzzleCompleted(3);
 
     private System.Collections.IEnumerator ShowErrorForFewSeconds()
     {
@@ -103,5 +115,10 @@ public class PipeController : MonoBehaviour
     private void OnDestroy()
     {
         pipeRotate.Rotated -= UpdateResults;
+    }
+
+    public bool IsPipes1Completed()
+    {
+        return pipes1Completed;
     }
 }
