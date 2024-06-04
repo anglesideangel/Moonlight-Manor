@@ -10,7 +10,6 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(NetworkManager.Singleton.gameObject);
-        UIManager.Instance.HideInfo();
     }
 
     // Start is called before the first frame update

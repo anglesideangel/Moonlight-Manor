@@ -21,6 +21,7 @@ public class UIManager : MonoBehaviour
         if (Instance == null)
         {
             Instance = this;
+            Instance.HideInfo();
             //DontDestroyOnLoad(gameObject);
         }
         btn = GetComponent<Button>();
