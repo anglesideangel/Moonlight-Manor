@@ -11,9 +11,9 @@ public class PipeButton2 : MonoBehaviour
         obj.GetComponent<PipeController2>().CheckResults();
     }
     public void GoBack(){
-        PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = true;
-        if (PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>() != null)
-        PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       
+        PlayerManager.Instance.Player2.GetComponentInChildren<FPSController>().enabled = true;
+        if (PlayerManager.Instance.Player2.GetComponentInChildren<mouseController>() != null)
+        PlayerManager.Instance.Player2.GetComponentInChildren<mouseController>().enabled = true;       
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Pipes2");
         //SceneManager.LoadScene("Main");
