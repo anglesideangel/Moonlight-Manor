@@ -9,6 +9,7 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject ActivePlayer { get; set; }
 
+    public Camera mainCamera;
     void Start()
     {
         if (Instance == null)
@@ -20,6 +21,7 @@ public class PlayerManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        
     }
 
     public void Assign(GameObject player){

@@ -17,5 +17,6 @@ public class LockButton : MonoBehaviour
         SceneManager.UnloadSceneAsync("Lock");
         //SceneManager.LoadScene("Main");
         UIManager.Instance.DisplayInfo();
+        PlayerManager.Instance.mainCamera.enabled = true;
     }
 }
