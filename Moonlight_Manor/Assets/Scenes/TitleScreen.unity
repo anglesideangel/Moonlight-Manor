@@ -1017,8 +1017,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1133502713604362561, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "          Room 1\r\n    Code on the wall. \r\n    ? under 3 is the
-        \n       first number."
+      value: "             Room 1\r\n\n     The [ ? ] under the 3  \n     is the
+        first number. \n\n       Press C to go back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133502713604362561, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 1133502713604362561, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 1322057021677745844, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_LocalScale.x
@@ -1130,17 +1138,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2856117268484936454, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "          Room 0\r\n    You are TRAPPED.\r\n    Try to ESCAPE if \r\n        
-        you can!\r\n   Press C to go back"
+      value: "   You got trapped and now \n  you need to escape. There \n  are 6
+        rooms and [ ! ] in \n  the corner are for hints.\n\n       Press C to go
+        back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856117268484936454, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2856117268484936454, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 3131136619000027333, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "         Room 2\r\n       Two PATHS.\r\n       Two Players.\r\n"
+      value: "             Room 2\r\n    \n           Two PATHS.\n\t Two players.\n\n      
+        Press C to go back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131136619000027333, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3131136619000027333, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4430505968181233473, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "          Room 6\r\n   No one likes leaks.\r\n   CONNECT all the \r\n    
-        pipes to prevent \r\n         any leaks."
+      value: "             Room 6\r\n\r\n    CONNECT all the pipes \n      to prevent
+        any leaks.\n\n       Press C to go back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430505968181233473, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4430505968181233473, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 4595486720839678568, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_LocalScale.x
@@ -1212,8 +1246,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7340930097171103287, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "          Room 5\r\n   Sometimes all you \r\n   need to do is PUSH
-        \r\n     and pull to find \r\n       the way out.\r"
+      value: "             Room 5\r\n   \n   Sometimes all you need\n   to do is
+        PUSH and pull.\r\n\n       Press C to go back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340930097171103287, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 7340930097171103287, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 7392354953453952565, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_LocalScale.x
@@ -1261,13 +1303,29 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8366821655659190097, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "          Room 3\r\n  The TARGET of this \r\nroom is to unscramble
-        \r\n      the PUZZLE.\r"
+      value: "             Room 3\r\n\n    Snap the PUZZLE into \n   place within
+        the frame.\r\n\n       Press C to go back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366821655659190097, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8366821655659190097, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 8588415261691547697, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
-      value: "          Room 4\r\n There is a key and a \r\n lock in this room but
-        \r\n  you will need to do \r\n     some SLIDING.\r"
+      value: "             Room 4\r\n\n       SLIDE the pieces \n        back into
+        place.\r\n\n       Press C to go back"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588415261691547697, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 8588415261691547697, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 8803308636994747085, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_LocalScale.x
