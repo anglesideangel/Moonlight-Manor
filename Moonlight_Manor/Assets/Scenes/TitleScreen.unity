@@ -1106,7 +1106,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2282627909136262548, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: debugMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2385618436589823566, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_UiScaleMode

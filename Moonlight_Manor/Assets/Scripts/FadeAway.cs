@@ -21,9 +21,7 @@ public class FadeAway : MonoBehaviour
 
     void Start()
     {
-        // Find the Image component on the GameObject
         image = GetComponentInChildren<RawImage>();
-        // Find the TMP_Text component in the children of this GameObject
         text = GetComponentInChildren<TMP_Text>();
 
         if (image == null || text == null)
@@ -31,8 +29,7 @@ public class FadeAway : MonoBehaviour
             Debug.LogError("Image and/or TMP_Text component not found");
             return;
         }
-
-        SetAlpha(0f); // Ensure the text starts invisible
+        SetAlpha(0f); 
     }
 
     void Update()
@@ -55,7 +52,7 @@ public class FadeAway : MonoBehaviour
             {
                 currentTime = 0f;
                 fadeState = FadeState.None;
-                gameObject.SetActive(false); // Optionally deactivate the GameObject
+                gameObject.SetActive(false); 
             }
             SetAlpha(currentTime / fadeOutTime);
         }
@@ -71,7 +68,7 @@ public class FadeAway : MonoBehaviour
 
         currentTime = 0f;
         fadeState = FadeState.FadingIn;
-        gameObject.SetActive(true); // Ensure the GameObject is active
+        gameObject.SetActive(true); 
     }
 
     private void SetAlpha(float alpha)
