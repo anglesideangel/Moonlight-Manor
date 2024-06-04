@@ -28,7 +28,6 @@ public class LaundryManager : MonoBehaviour
        
         Rigidbody rb = stackMachines.GetComponent<Rigidbody>();
         if (rb != null) rb.isKinematic =true;
-        Debug.Log(soundEnd.name);
         //rb.velocity = Vector3.zero;
         //rb.constraints = RigidbodyConstraints.FreezeAll;
     }

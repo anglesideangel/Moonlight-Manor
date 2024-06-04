@@ -21,28 +21,26 @@ public class MoveLaundry : MonoBehaviour
     {
         
     }
-private void OnTriggerEnter(Collider other)
-{
-    if (other.CompareTag("Wall"))
+    private void OnTriggerEnter(Collider other)
     {
-        Rigidbody rb = GetComponent<Rigidbody>();
-        if (rb != null)
+        if (other.CompareTag("Wall"))
         {
-            rb.velocity = Vector3.zero;
-            rb.constraints = RigidbodyConstraints.FreezeAll;
-            LaundryManager.Instance.isGoodPositionArray[index] = true;
-            LaundryManager.Instance.CheckPuzzleCompleted();
-            Debug.Log("là");
-            if (soundSuccess != null)
+            Rigidbody rb = GetComponent<Rigidbody>();
+            if (rb != null)
             {
-            Debug.Log("ehh");
-            SoundLaundrySuccess sound = soundSuccess.GetComponent<SoundLaundrySuccess>();
-            if (sound != null) {
-                sound.PlaySound();
-                Debug.Log("wouhou");
-            } 
+                rb.velocity = Vector3.zero;
+                rb.constraints = RigidbodyConstraints.FreezeAll;
+                LaundryManager.Instance.isGoodPositionArray[index] = true;
+                LaundryManager.Instance.CheckPuzzleCompleted();
+                if (soundSuccess != null)
+                {
+                    SoundLaundrySuccess sound = soundSuccess.GetComponent<SoundLaundrySuccess>();
+                    if (sound != null) 
+                    {
+                        sound.PlaySound();
+                    } 
+                }
             }
         }
     }
-}
 }
