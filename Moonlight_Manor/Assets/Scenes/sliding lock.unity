@@ -2335,8 +2335,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1830426937}
-  - component: {fileID: 1830426936}
   - component: {fileID: 1830426938}
+  - component: {fileID: 1830426939}
   m_Layer: 0
   m_Name: GameObjectLock
   m_TagString: Untagged
@@ -2344,35 +2344,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1830426936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1830426935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a3c5fe4a15ddfe44295fafa63a55ee58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  puzzlePieces:
-  - {fileID: 92769822}
-  - {fileID: 1474094820}
-  - {fileID: 623478253}
-  - {fileID: 1296103909}
-  - {fileID: 1594028453}
-  - {fileID: 255910618}
-  - {fileID: 607075917}
-  - {fileID: 1586868915}
-  emptyPosition: {x: -3.3466415, y: 1.0431356, z: -3.4328685}
-  positions: []
-  initialPositions: []
-  numbers: 
-  textFail: {fileID: 1503714665}
-  textSolved: {fileID: 1840006727}
-  Tiles: {fileID: 895318632}
-  puzzle1Completed: 0
 --- !u!4 &1830426937
 Transform:
   m_ObjectHideFlags: 0
@@ -2402,6 +2373,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzle1Completed: 0
   puzzle2Completed: 0
+--- !u!114 &1830426939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830426935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43371d8dd21334f1cb89dc48ce03dac4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzlePieces:
+  - {fileID: 92769822}
+  - {fileID: 1474094820}
+  - {fileID: 623478253}
+  - {fileID: 1296103909}
+  - {fileID: 1594028453}
+  - {fileID: 255910618}
+  - {fileID: 607075917}
+  - {fileID: 1586868915}
+  emptyPosition: {x: 0, y: 0, z: 0}
+  positions: []
+  initialPositions: []
+  numbers: 
+  textFail: {fileID: 1503714665}
+  textSolved: {fileID: 1840006727}
+  Tiles: {fileID: 895318632}
+  puzzle1Completed: 0
 --- !u!1 &1840006726
 GameObject:
   m_ObjectHideFlags: 0
