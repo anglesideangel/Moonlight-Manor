@@ -116,7 +116,7 @@ public class SlidingPuzzle2 : MonoBehaviour
         if (IsSolved(initialPositions))
         {
             textSolved.gameObject.SetActive(true);
-            PuzzleManager.Instance.GetComponentInChildren<PuzzleChecker>().Puzzle2Completed(); // Check both puzzles completion                
+            PuzzleManager.Instance.GetComponentInChildren<PuzzleChecker>().Puzzle2CompletedServerRpc(); // Check both puzzles completion                
         }
         else 
         {

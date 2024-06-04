@@ -12,7 +12,7 @@ public class SlidingButtonLock : MonoBehaviour
     }
     public void GoBack(){
         PlayerManager.Instance.Player1.GetComponentInChildren<FPSController>().enabled = true;
-        //PlayerManager.Instance.Player1.GetComponentInChildren<mouseController>().enabled = true;       
+        PlayerManager.Instance.Player1.GetComponentInChildren<mouseController>().enabled = true;       
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("sliding lock");
         //SceneManager.LoadScene("Main");
