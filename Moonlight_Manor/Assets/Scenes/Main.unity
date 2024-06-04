@@ -38728,7 +38728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9153fab4daab24945a7891c8a81e7ffa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  index: 0
+  index: 4
   soundSuccess: {fileID: 244422416}
 --- !u!54 &1936336958
 Rigidbody:
