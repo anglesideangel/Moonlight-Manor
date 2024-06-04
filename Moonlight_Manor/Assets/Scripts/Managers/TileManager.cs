@@ -16,6 +16,9 @@ public class TileManager : MonoBehaviour
     public GameObject door;
     // to be sure that it init the list before Tiles.cs calls AddCorrectTile
     // and try to access to lists 
+
+    public GameObject soundEnd;
+
     void Awake()
     {
         correctTiles = new List<Tile>[2]; 
@@ -84,7 +87,12 @@ public class TileManager : MonoBehaviour
                 return; 
             }
         }
-        
+        if (soundEnd != null)
+        {
+            SoundEndLaundryController sound = soundEnd.GetComponent<SoundEndLaundryController>();
+            if (sound != null)  sound.PlaySound();
+        }
+
         StartCoroutine(DisplayMessage(canvas[index], 2.0f)); 
         puzzleCompleted[index] = true;
         // door.GetComponent<DoorNewSceneController>().OpenDoor();

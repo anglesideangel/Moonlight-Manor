@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
     public bool closeButton = false;
     private Button btn;
     public static UIManager Instance { get; private set; }
+    public GameObject info;
 
     void Start()
     {
@@ -90,6 +91,12 @@ public class UIManager : MonoBehaviour
         btn.interactable = false;
     }
 
+    public void DisplayInfo(){
+        info.SetActive(true);
+    }
+    public void HideInfo(){
+        info.SetActive(false);
+    }
 
 
    

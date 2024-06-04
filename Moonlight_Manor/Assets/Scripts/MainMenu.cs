@@ -10,7 +10,7 @@ public class MainMenu : MonoBehaviour
     private void Start()
     {
         DontDestroyOnLoad(NetworkManager.Singleton.gameObject);
-        InfoManager.Instance.HideInfo();
+        UIManager.Instance.HideInfo();
     }
 
     // Start is called before the first frame update
@@ -20,13 +20,13 @@ public class MainMenu : MonoBehaviour
         //StartCoroutine(WaitForClients());
         
         NetworkManager.Singleton.SceneManager.LoadScene("Main", LoadSceneMode.Single);
-        InfoManager.Instance.DisplayInfo();
+        UIManager.Instance.DisplayInfo();
     }
 
     public void JoinGame()
     {
         NetworkManager.Singleton.StartClient();
-        InfoManager.Instance.DisplayInfo();
+        UIManager.Instance.DisplayInfo();
     }
 
     public void QuitGame()

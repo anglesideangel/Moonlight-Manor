@@ -12,6 +12,8 @@ public class Tile : MonoBehaviour
     public bool isEntringTile;
     public int order1;
     public int order2;
+    public GameObject soundObject;
+
    
 
    // Start is called before the first frame update
@@ -76,8 +78,13 @@ public class Tile : MonoBehaviour
         FPSController script = other.GetComponent<FPSController>();
                 
         script.enabled = false;
+        if (soundObject != null)
+        {
+            SoundTeleportationTile sound = soundObject.GetComponent<SoundTeleportationTile>();
+            if (sound != null)  sound.PlaySound();
+        }
         character.transform.position = new Vector3(0.12f, 1.98f, 25.91f);
-                
+        
         yield return new WaitForSeconds(0.1f);
         script.enabled = true;
 

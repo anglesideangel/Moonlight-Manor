@@ -7,11 +7,10 @@ public class LaundryManager : MonoBehaviour
 {
     public Canvas[] canvas = new Canvas[2];
 
-    public bool[] isGoodPosition = new bool[2]; // all false
+    public bool[] isGoodPositionArray = new bool[7]; // all false
    
     public static LaundryManager Instance { get; private set; }
 
-    private AudioSource audioSource;
     public GameObject soundEnd;
 
     public GameObject stackMachines;
@@ -29,8 +28,7 @@ public class LaundryManager : MonoBehaviour
        
         Rigidbody rb = stackMachines.GetComponent<Rigidbody>();
         if (rb != null) rb.isKinematic =true;
-
-        audioSource = GetComponent<AudioSource>();
+        Debug.Log(soundEnd.name);
         //rb.velocity = Vector3.zero;
         //rb.constraints = RigidbodyConstraints.FreezeAll;
     }
@@ -38,7 +36,7 @@ public class LaundryManager : MonoBehaviour
 
     public bool CheckPuzzleCompleted()
     {
-        foreach (bool b in isGoodPosition)
+        foreach (bool b in isGoodPositionArray)
         { 
             if (b== false)
             {
@@ -54,7 +52,9 @@ public class LaundryManager : MonoBehaviour
         if (soundEnd != null)
         {
             SoundEndLaundryController sound = soundEnd.GetComponent<SoundEndLaundryController>();
-            if (sound != null)  sound.PlaySound();
+            if (sound != null) {
+                sound.PlaySound();
+            } 
         }
         HighlightStack(stackMachines);
         return true;

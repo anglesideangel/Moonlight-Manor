@@ -11,6 +11,6 @@ public class SlidingButton : MonoBehaviour
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("sliding key");
         //SceneManager.LoadScene("Main");
-        InfoManager.Instance.DisplayInfo();
+        UIManager.Instance.DisplayInfo();
     }
 }

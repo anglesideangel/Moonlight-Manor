@@ -48,7 +48,7 @@ public class Player1Trigger : MonoBehaviour
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = false;
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = false;
                 SceneManager.LoadScene(newSceneName, LoadSceneMode.Additive);
-                InfoManager.Instance.HideInfo();
+                UIManager.Instance.HideInfo();
             }
         }
     }

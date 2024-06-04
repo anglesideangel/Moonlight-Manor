@@ -16,6 +16,6 @@ public class PipeButton2 : MonoBehaviour
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Pipes2");
         //SceneManager.LoadScene("Main");
-        InfoManager.Instance.DisplayInfo();
+        UIManager.Instance.DisplayInfo();
     }
 }

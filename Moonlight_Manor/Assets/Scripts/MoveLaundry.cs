@@ -7,6 +7,8 @@ public class MoveLaundry : MonoBehaviour
 {
 
     public int index;
+    public GameObject soundSuccess;
+
     
     // Start is called before the first frame update
     void Start()
@@ -28,8 +30,18 @@ private void OnTriggerEnter(Collider other)
         {
             rb.velocity = Vector3.zero;
             rb.constraints = RigidbodyConstraints.FreezeAll;
-            LaundryManager.Instance.isGoodPosition[index] = true;
+            LaundryManager.Instance.isGoodPositionArray[index] = true;
             LaundryManager.Instance.CheckPuzzleCompleted();
+            Debug.Log("là");
+            if (soundSuccess != null)
+            {
+            Debug.Log("ehh");
+            SoundLaundrySuccess sound = soundSuccess.GetComponent<SoundLaundrySuccess>();
+            if (sound != null) {
+                sound.PlaySound();
+                Debug.Log("wouhou");
+            } 
+            }
         }
     }
 }

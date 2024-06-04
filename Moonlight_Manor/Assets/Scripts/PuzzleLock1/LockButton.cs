@@ -16,6 +16,6 @@ public class LockButton : MonoBehaviour
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("Lock");
         //SceneManager.LoadScene("Main");
-        InfoManager.Instance.DisplayInfo();
+        UIManager.Instance.DisplayInfo();
     }
 }

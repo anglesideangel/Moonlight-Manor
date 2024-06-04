@@ -11,6 +11,6 @@ public class SlidingButtonLock : MonoBehaviour
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("sliding lock");
         //SceneManager.LoadScene("Main");
-        InfoManager.Instance.DisplayInfo();
+        UIManager.Instance.DisplayInfo();
     }
 }
