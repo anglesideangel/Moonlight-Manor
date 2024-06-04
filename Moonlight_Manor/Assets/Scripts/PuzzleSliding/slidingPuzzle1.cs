@@ -117,7 +117,7 @@ public class SlidingPuzzle1 : MonoBehaviour
         {
             textSolved.gameObject.SetActive(true);
             puzzle1Completed = true;
-            PuzzleChecker.Instance.CheckBothPuzzles(); // Check both puzzles completion                                return;
+            PuzzleChecker.Instance.CheckBothPuzzles(); // Check both puzzles completion                                
         }
         else 
         {
@@ -170,7 +170,6 @@ public class SlidingPuzzle1 : MonoBehaviour
 
     public bool IsPuzzle1Completed()
     {
-        Debug.Log("done?");
         return puzzle1Completed;
     }
 }
