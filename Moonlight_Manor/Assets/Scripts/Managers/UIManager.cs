@@ -41,7 +41,6 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("Button component not found!");
         }
-        HideInfo();
     }
     void Update(){
        
@@ -97,7 +96,6 @@ public class UIManager : MonoBehaviour
         info.SetActive(true);
     }
     public void HideInfo(){
-        Debug.Log("Hiding info");
         info.SetActive(false);
     }
 

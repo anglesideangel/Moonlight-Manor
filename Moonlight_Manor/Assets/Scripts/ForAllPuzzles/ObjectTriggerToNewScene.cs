@@ -47,7 +47,6 @@ public class ObjectTriggerToNewScene : MonoBehaviour
         {
             if (triggerAction)
             {
-                PlayerManager.Instance.mainCamera = Camera.main;
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = false;
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = false;
                 SceneManager.LoadScene(newSceneName, LoadSceneMode.Additive);

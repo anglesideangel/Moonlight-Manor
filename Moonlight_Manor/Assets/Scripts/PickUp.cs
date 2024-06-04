@@ -12,13 +12,10 @@ public class PickUp : MonoBehaviour
     float width;
     static int piecesCorrect = 0;
 
-    public GameObject cameraObject;
-
     void Start(){
         JigsawPuzzleLogic jigsaw = FindObjectOfType<JigsawPuzzleLogic>();
         pieces = jigsaw.pieces;
         OgPos = jigsaw.originalPosition;
-        PlayerManager.Instance.mainCamera.enabled = false;
     }
 
     private Vector3 GetMousePos(){
@@ -33,11 +30,10 @@ public class PickUp : MonoBehaviour
         // Get the current mouse position in screen space
         Vector3 currentMousePosition = Input.mousePosition - mousePosition;
         // Convert the screen space position to world space
-        Camera camera = cameraObject.GetComponent<Camera>();
-        Vector3 worldPosition = camera.ScreenToWorldPoint(currentMousePosition);
-      
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(currentMousePosition);
+        
         // Only take x and z coordinates, keep y the same as the object's current position
-        transform.position = new Vector3(worldPosition.x, -worldPosition.y,worldPosition.z);
+        transform.position = new Vector3(worldPosition.x, transform.position.y, worldPosition.z);
     }
 
     private void OnMouseUp(){

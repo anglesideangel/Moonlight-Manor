@@ -17,6 +17,5 @@ public class PipeButton2 : MonoBehaviour
         SceneManager.UnloadSceneAsync("Pipes2");
         //SceneManager.LoadScene("Main");
         UIManager.Instance.DisplayInfo();
-        PlayerManager.Instance.mainCamera.enabled = true;
     }
 }

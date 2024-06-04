@@ -1018,7 +1018,7 @@ PrefabInstance:
     - target: {fileID: 1133502713604362561, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_text
       value: "          Room 1\r\n    Code on the wall. \r\n    ? under 3 is the
-        \n       first number of \n         the code."
+        \n       first number."
       objectReference: {fileID: 0}
     - target: {fileID: 1322057021677745844, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_LocalScale.x
@@ -1202,17 +1202,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6749009209050856360, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6749009209050856360, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
       propertyPath: m_SortingOrder
-=======
-    - target: {fileID: 6578626239585913284, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
-      propertyPath: m_IsActive
->>>>>>> Stashed changes
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7340930097171103287, guid: cb6ea7679126eea4fb28ef9afdadcffd, type: 3}
