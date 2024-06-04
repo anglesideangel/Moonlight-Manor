@@ -20,7 +20,6 @@ public class SlidingPuzzle2 : MonoBehaviour
     public TMP_Text textFail;
     public TMP_Text textSolved;
     public GameObject Tiles;
-    public bool puzzle2Completed = false; // Initialize to false
 
     void Awake()
     {
@@ -34,7 +33,8 @@ public class SlidingPuzzle2 : MonoBehaviour
         textSolved.gameObject.SetActive(false);
         textFail.gameObject.SetActive(false);
         emptyPosition = GameObject.Find("player2EmptySpace").transform.position;
-        ShufflePuzzle();
+        if (!PuzzleManager.Instance.GetComponentInChildren<PuzzleChecker>().puzzle2Completed.Value)
+            ShufflePuzzle();
     }
 
     public void index(Vector3 position)
@@ -116,8 +116,7 @@ public class SlidingPuzzle2 : MonoBehaviour
         if (IsSolved(initialPositions))
         {
             textSolved.gameObject.SetActive(true);
-            puzzle2Completed = true;
-            PuzzleChecker.Instance.CheckBothPuzzles(); // Check both puzzles completion                
+            PuzzleManager.Instance.GetComponentInChildren<PuzzleChecker>().Puzzle2CompletedServerRpc(); // Check both puzzles completion                
         }
         else 
         {
@@ -164,10 +163,5 @@ public class SlidingPuzzle2 : MonoBehaviour
         }
         // Puzzle is solved
         return true;
-    }
-
-    public bool IsPuzzle2Completed()
-    {
-        return puzzle2Completed;
     }
 }

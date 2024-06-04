@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 using TMPro;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class Pipes2Trigger : MonoBehaviour
+public class Pipes2Trigger : NetworkBehaviour
 {
     public TMP_Text text;
     public bool triggerAction = false;
@@ -37,7 +38,7 @@ public class Pipes2Trigger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) && PlayerManager.Instance.ActivePlayer == PlayerManager.Instance.Player2)
         {
             if (triggerAction)
             {
@@ -45,7 +46,6 @@ public class Pipes2Trigger : MonoBehaviour
                 PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = false;
                 SceneManager.LoadScene(newSceneName, LoadSceneMode.Additive);
                 UIManager.Instance.HideInfo();
-
             }
         }
     }

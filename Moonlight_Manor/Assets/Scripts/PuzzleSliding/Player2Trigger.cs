@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 using TMPro;
 using UnityEngine.UI;
+using Unity.Netcode;
 
-public class Player2Trigger : MonoBehaviour
+public class Player2Trigger : NetworkBehaviour
 {
     public TMP_Text text;
     public bool triggerAction = false;
@@ -41,7 +42,7 @@ public class Player2Trigger : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.C))
+        if (Input.GetKeyDown(KeyCode.C) &&  PlayerManager.Instance.ActivePlayer == PlayerManager.Instance.Player2)
         {
             if (triggerAction)
             {

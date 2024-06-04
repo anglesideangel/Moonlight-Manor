@@ -11,8 +11,8 @@ public class SlidingButton : MonoBehaviour
         obj.GetComponent<SlidingPuzzle2>().CheckResults();
     }
     public void GoBack(){
-        PlayerManager.Instance.ActivePlayer.GetComponentInChildren<FPSController>().enabled = true;
-        PlayerManager.Instance.ActivePlayer.GetComponentInChildren<mouseController>().enabled = true;       
+        PlayerManager.Instance.Player2.GetComponentInChildren<FPSController>().enabled = true;
+        PlayerManager.Instance.Player2.GetComponentInChildren<mouseController>().enabled = true;       
         //SceneManager.LoadSceneAsync("SecondScene", LoadSceneMode.Additive);
         SceneManager.UnloadSceneAsync("sliding key");
         //SceneManager.LoadScene("Main");
