@@ -5,35 +5,35 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+using Unity.Netcode;
 
 public class PuzzleChecker : MonoBehaviour
 {
-    public static PuzzleChecker Instance;
+    public NetworkVariable<bool> puzzle1Completed = new NetworkVariable<bool>(false);
+    public NetworkVariable<bool> puzzle2Completed = new NetworkVariable<bool>(false);
 
-    public bool puzzle1Completed = false;
-    public bool puzzle2Completed = false;
-
-    void Awake()
+    void Start()
     {
-        Instance = this;
+        puzzle1Completed.OnValueChanged += OnPuzzleCompleted;
+        puzzle2Completed.OnValueChanged += OnPuzzleCompleted;
     }
 
-    public void CheckBothPuzzles()
+    [Rpc(SendTo.Server)]
+    public void Puzzle2Completed(){
+        Debug.Log("Puzzle 2 Completed!");
+        puzzle2Completed.Value = true;
+    }
+
+    public void Puzzle1Completed(){
+        Debug.Log("Puzzle 1 Compelted!");
+        puzzle1Completed.Value = true;
+    }
+
+    public void OnPuzzleCompleted(bool prev, bool cur)
     {
-        if (SlidingPuzzle1.Instance.IsPuzzle1Completed())
-        {
-            puzzle1Completed = true;
-            Debug.Log("lock");
-        }
-        if (SlidingPuzzle2.Instance.IsPuzzle2Completed())
-        {
-            puzzle2Completed = true;
-            Debug.Log("keys");
-        }
-        if (puzzle1Completed && puzzle2Completed)
+        if (puzzle1Completed.Value && puzzle2Completed.Value)
         {
             PuzzleManager.Instance.PuzzleCompleted(4);
-            // Both puzzles are completed, perform desired action
             Debug.Log("Both puzzles are completed!");
         }
     }

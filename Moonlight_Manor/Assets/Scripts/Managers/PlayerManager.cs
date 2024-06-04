@@ -34,7 +34,7 @@ public class PlayerManager : MonoBehaviour
             Debug.Log("Player 2 has joined the game!");
         }
         else{
-            Debug.Log("Player 2 has joined the game!");
+            Debug.Log("Too many players!");
             throw new InvalidOperationException("Too many players!");
         }
     }
