@@ -4,7 +4,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-
 public class UIManager : MonoBehaviour
 {
     public GameObject hintBox;
@@ -41,6 +40,7 @@ public class UIManager : MonoBehaviour
         {
             Debug.LogError("Button component not found!");
         }
+        HideInfo();
     }
     void Update(){
        
