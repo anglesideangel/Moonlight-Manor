@@ -10,11 +10,13 @@ public class PickUp : MonoBehaviour
     private Transform pickedUpPiece = null;
     Vector3 mousePosition;
     float width;
+    int piecesCorrect;
 
     void Start(){
         JigsawPuzzleLogic jigsaw = FindObjectOfType<JigsawPuzzleLogic>();
         pieces = jigsaw.pieces;
         OgPos = jigsaw.originalPosition;
+        int piecesCorrect = 0;
     }
 
     private Vector3 GetMousePos(){
@@ -50,6 +52,10 @@ public class PickUp : MonoBehaviour
         if(Vector3.Distance(pickedUpPiece.position,targetPosition) < width/2){
             pickedUpPiece.position = targetPosition;
             pickedUpPiece.GetComponent<MeshCollider>().enabled = false;
+            piecesCorrect++;
+            if(piecesCorrect == 35){
+                Debug.Log("COMPLETE!");
+            }
 
         }
         
